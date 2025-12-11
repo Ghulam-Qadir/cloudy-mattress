@@ -1,0 +1,207 @@
+/* ========================================
+   HERO SECTION STYLES
+   - Wrapper and background
+   - Left text content
+   - Headline
+   - Description
+   - Feature cards
+   - CTA button area
+   - Hero image / media (right side)
+======================================== */
+
+.hero-section {
+    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
+    padding: 10rem 0 4rem;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding-right: 3rem;
+}
+
+.hero-title {
+    margin-bottom: 1.5rem;
+}
+
+.hero-title .title-script {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4.5rem; /* Increased font size */
+    line-height: 1;
+    display: block;
+    color: white; /* Changed to white */
+}
+
+.hero-title .title-sans {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    display: block;
+    color: #005f7f; /* Changed to blue */
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: #333; /* Darker text color */
+}
+
+.hero-description strong {
+    font-weight: 700;
+    color: #000; /* Black color for emphasis */
+}
+
+.hero-features {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature-label {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #003d52;
+}
+
+.feature-label .label-line-1 {
+    display: block;
+    font-weight: 700;
+}
+
+.feature-label .label-line-2 {
+    display: block;
+    font-weight: 400;
+}
+
+.hero-actions .btn-quiz {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.hero-actions .btn-quiz:hover {
+    background-color: darken(var(--accent-color), 10%);
+    border-color: darken(var(--accent-color), 10%);
+}
+
+.quiz-subtext {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.hero-media {
+    position: relative;
+}
+
+.hero-media img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* hero bottom shipping icon */
+
+.features-wrap {
+    background: #eef8fb;
+    padding: 0px 20px;
+    margin-top: 100px;
+  }
+  
+  .features {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 18px 16px;
+  }
+  
+  .feature {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 6px 22px;
+  }
+  
+  /* vertical divider */
+  .feature:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 1px;
+    height: 70%;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* FIX: Make text stack vertically EXACTLY like image */
+  .label-small {
+    display: block;
+    color: #e02b2b;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  
+  .label-big {
+    display: block;
+    color: #024f6a;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 760px) {
+    .features {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .feature:not(:last-child)::after {
+      display: none;
+    }
+  }
+  

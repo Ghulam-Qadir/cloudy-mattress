@@ -1,0 +1,10 @@
+/* ========================================
+   LAYOUT STYLES
+   - Global layout helpers
+   - Container adjustments
+   - Grid adjustments
+======================================== */
+
+.container {
+    max-width: 1200px;
+}

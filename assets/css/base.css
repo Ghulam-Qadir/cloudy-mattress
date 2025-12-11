@@ -1,0 +1,45 @@
+/* ========================================
+   BASE STYLES
+   - CSS variables
+   - Global styles
+   - Typography
+   - Helper classes
+======================================== */
+@font-face {
+    font-family: "Viktor Script";
+    src: url("/assets/fonts/fontsfree-Net-ViktorScript-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Viktor Script';
+    --text-color: #333;
+    --primary-color: #007bff;
+    --accent-color: #dc3545;
+    --background-gradient-start: #62a8c4;
+    --background-gradient-end: #ffffff;
+    --product-border-color:#eef1f5;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darken(var(--primary-color), 10%);
+    text-decoration: none;
+}

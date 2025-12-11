@@ -1,0 +1,96 @@
+.footer-bg {
+    background: #e8edf0; /* exact pale grey/blue from screenshot */
+}
+
+/* left column logo */
+.footer-logo {
+    max-width: 180px;
+}
+
+/* heading */
+.footer-head {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* description paragraph */
+.footer-desc {
+    font-size: 15px;
+    color: #50555a;
+    line-height: 1.7;
+    max-width: 370px;
+}
+
+/* call button */
+.footer-cta-btn {
+    background: #d80707;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-cta-btn:hover {
+    opacity: .9;
+    color: #fff;
+}
+
+/* small text */
+.footer-small {
+    font-size: 13px;
+    color: #555;
+}
+
+.footer-address {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* section titles */
+.footer-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* link menus */
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-menu a {
+    position: relative;
+    padding-left: 26px;
+    font-size: 15px;
+    color: #0d0d0d;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.footer-menu a:hover {
+    color: #d80707;
+}
+
+/* check icon before each link */
+.footer-menu a::before {
+    content:"\2714";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background-repeat: no-repeat;
+    background-size: 14px;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .footer-title.text-center { text-align: left !important; }
+    .footer-menu a { padding-left: 22px; }
+    .footer-cta-btn { padding: 12px 28px; font-size: 18px; }
+}

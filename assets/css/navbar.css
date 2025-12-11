@@ -1,0 +1,108 @@
+/* ========================================
+   NAVBAR SECTION STYLES
+   - Main container
+   - Logo
+   - Nav links
+   - Icon group (search, user, wishlist, cart)
+======================================== */
+
+header {
+    z-index: 10;
+    height: 90dvh;
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.navbar-logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo-text {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 400; /* Lighter font weight */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar-nav .nav-link.dropdown-toggle::after {
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+/* Dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+
+.navbar-icons .nav-icon {
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.cart-icon .cart-notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-item {
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333;
+    }
+
+    .navbar-icons .nav-icon {
+        color: #333;
+    }
+}
