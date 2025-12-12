@@ -1,3 +1,139 @@
+
+/* Newsletter CTA — exact UI copy */
+/* Section wrapper */
+.nl-section {
+background: #e8edf0;
+  padding: 36px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.04); /* subtle top line like image */
+}
+
+/* Inner container */
+.nl-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+
+/* LEFT: text */
+.nl-left { padding-left: 8px; }
+
+.nl-eyebrow {
+  color: #d91a1a;         /* red eyebrow */
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.nl-title {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 40px;
+  line-height: 1.02;
+  font-weight: 800;
+  color: #0b0b0b;
+  letter-spacing: -0.6px;
+}
+
+.nl-line { display: inline-block; }
+
+.nl-strong {
+  color: #d91a1a;        /* 10% in red */
+  font-weight: 900;
+}
+
+/* small subtext */
+.nl-sub {
+  margin: 10px 0 0;
+  color: #7c8084;
+  font-size: 14px;
+}
+
+/* RIGHT: form layout */
+.nl-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+.nl-form {
+  width: 100%;
+  max-width: 740px; /* matches width in image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Large pill input */
+.nl-input {
+  width: 100%;
+  height: 68px;               /* tall pill */
+  padding: 0 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #ffffff;
+  font-size: 18px;
+  color: #222;
+  box-sizing: border-box;
+  outline: none;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+/* input focus state */
+.nl-input:focus {
+  border-color: rgba(0,0,0,0.18);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* Subscribe button (black pill) centered under input) */
+.nl-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nl-btn {
+  background: #0b0b0b;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: none;
+  transition: transform .12s ease, background .12s ease;
+}
+
+/* subtle hover */
+.nl-btn:hover { transform: translateY(-2px); background: #0a0a0a; }
+
+/* utility: screen-reader only */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px,1px,1px,1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
+/* RESPONSIVE: stack on small screens */
+@media (max-width: 900px) {
+  .nl-inner { grid-template-columns: 1fr; text-align: center; gap: 18px; }
+  .nl-left { order: 0; padding-left: 0; }
+  .nl-title { font-size: 32px; }
+  .nl-form { max-width: 540px; }
+  .nl-input { height: 60px; font-size: 16px; padding: 0 20px; }
+  .nl-btn { padding: 12px 30px; }
+}
+
+
+
 .footer-bg {
     background: #e8edf0; /* exact pale grey/blue from screenshot */
 }
