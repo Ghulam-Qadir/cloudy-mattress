@@ -1,0 +1,221 @@
+/* ============================================================
+   CARD DESIGN 1 – BEST SELLERS SECTION
+   Matches the UI with the floating red badge, pale image bg,
+   white gutters, shadow, and price layout.
+   ============================================================ */
+
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 8px solid #fff; /* white gutter */
+  border-top: 8px solid #fff;
+  box-sizing: border-box;
+  min-height: 320px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  overflow: visible;
+}
+
+/* Remove border for the first grid item if needed */
+.cards .card:first-child {
+  border-left: none;
+  border-top: none;
+}
+
+/* Image section */
+.card-img {
+  background: #eef3f6;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img img {
+  max-width: 240px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Body area */
+.card-body {
+  padding: 12px 18px 22px;
+  position: relative;
+  background: #fff;
+  flex: 1;
+}
+
+/* Red badge */
+.badge {
+  position: absolute;
+  top: -41px;
+  left: 0px;
+  background: #d90000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 0 12px 12px 0;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Title */
+.card-title {
+  font-size: 15px;
+  margin: 18px 0 8px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.35;
+}
+
+/* Rating + reviews */
+.card-rating {
+  color: #ffb400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.card-rating .reviews {
+  color: #1aa0c9;
+  margin-left: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Price block */
+.card-price {
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.price-main {
+  font-weight: 800;
+  font-size: 18px;
+  color: #111;
+}
+.price-old {
+  text-decoration: line-through;
+  color: #9fa3a8;
+  font-size: 14px;
+}
+.price-note {
+  color: #9fa3a8;
+  font-size: 13px;
+}
+
+/* ============================================================
+   CARD DESIGN 2 – PRODUCT SECTION
+   Modern e-commerce card with sizes, brand, and shop-now button.
+   ============================================================ */
+
+.product-item {
+  background-color: #ffffff;
+  border: 1px solid var(--product-border-color);
+  border-radius: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Details section */
+.product-details {
+  padding: 1rem;
+}
+
+/* Title */
+.product-item h5 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Rating & reviews */
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+.stars {
+  color: #ffc107;
+}
+
+/* Pricing */
+.price { margin-bottom: 1rem; }
+.original-price {
+  text-decoration: line-through;
+  color: var(--text-muted-color);
+  margin-right: 0.5rem;
+}
+.current-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.price-info {
+  font-size: 0.875rem;
+  color: var(--text-muted-color);
+}
+
+/* Size options */
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.size-options button {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.size-options button.active {
+  background-color: var(--text-color);
+  color: #fff;
+  border-color: var(--text-color);
+}
+
+/* Brand & Shop Now */
+.brand-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-now {
+  background-color: transparent;
+  color: #d9534f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+}
+.shop-now::before,
+.shop-now::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: #d9534f;
+}
+.shop-now::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+.shop-now::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
