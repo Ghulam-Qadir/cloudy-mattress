@@ -96,6 +96,7 @@
   .bs-main {
     grid-template-columns: 360px 1fr;
     gap: 18px;
+    overflow: hidden;
   }
   .promo {
     height: 680px;

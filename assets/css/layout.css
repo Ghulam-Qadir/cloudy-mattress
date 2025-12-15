@@ -44,16 +44,19 @@
   letter-spacing: 0.6px;
   margin-bottom: 6px;
 }
+
 .hero-title {
   font-size: 34px;
   margin: 0 0 6px;
   letter-spacing: -0.5px;
   font-weight: 800;
 }
+
 .hero-sub {
   margin: 0;
   color: #6b6f74;
   font-size: 14px;
+  max-width: 520px;
 }
 
 /* --- category pills --- */
@@ -62,6 +65,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap; /* mobile wrap */
 }
 
 .pill {
@@ -71,17 +75,20 @@
   background: #eef2f5;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
+
 .pill.active {
   background: #0b0b0b;
   color: #fff;
 }
 
-
+/* --- arrows --- */
 .bs-arrows {
   display: flex;
   gap: 10px;
 }
+
 .arrow {
   width: 42px;
   height: 42px;
@@ -90,4 +97,72 @@
   cursor: pointer;
   background-color: transparent;
 }
+
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+
+@media (max-width: 768px) {
+
+  .ps-hero {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .ps-hero-left {
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .ps-hero-badges .logo-slices {
+    width: 56px;
+    height: 52px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-sub {
+    font-size: 13px;
+  }
+
+  .ps-pills {
+    gap: 10px;
+  }
+
+  .pill {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .bs-arrows {
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+
+  .arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .ps-hero-left {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .pill {
+    padding: 9px 18px;
+    font-size: 13px;
+  }
+}
+
 

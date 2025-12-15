@@ -1,0 +1,228 @@
+.faq-section {
+    padding: 40px 0;
+  }
+  
+  .faq-accordion .accordion-item {
+    border: none;
+    margin-bottom: 14px;
+  }
+  
+  .faq-accordion .accordion-button {
+    background: #eef7fb;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0d0d0d;
+    padding: 22px 26px;
+    box-shadow: none;
+  }
+  
+  /* remove default bootstrap arrow */
+  .faq-accordion .accordion-button::after {
+    display: none;
+  }
+  
+  /* custom arrow container */
+  .faq-accordion .accordion-button::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* arrow icon */
+  .faq-accordion .accordion-button span,
+  .faq-accordion .accordion-button::after {
+    display: none;
+  }
+  
+  .faq-accordion .accordion-button:not(.collapsed)::before {
+    transform: rotate(180deg);
+  }
+  
+  /* arrow shape */
+  .faq-accordion .accordion-button::after {
+    content: "";
+  }
+  
+  .faq-accordion .accordion-button::after {
+    display: none;
+  }
+  
+  .faq-accordion .accordion-button::before {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23000' stroke-width='2' viewBox='0 0 24 24'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* body */
+  .faq-accordion .accordion-body {
+    background: #ffffff;
+    padding: 20px 26px;
+    font-size: 14px;
+    color: #444;
+    border-top: 1px solid #e2edf3;
+  }
+  
+  /* active state */
+  .faq-accordion .accordion-button:not(.collapsed) {
+    background: #eef7fb;
+    color: #000;
+  }
+
+  /* QA Banner Styles  */
+
+  .qa-banner {
+    width: 100%;
+  }
+  
+  .qa-banner-inner {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  /* image via HTML */
+  .qa-banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* dark gradient on left */
+  .qa-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0,0,0,0.75) 0%,
+      rgba(0,0,0,0.55) 35%,
+      rgba(0,0,0,0.15) 60%,
+      rgba(0,0,0,0) 75%
+    );
+  }
+  
+  /* text content */
+  .qa-content {
+    position: relative;
+    max-width: 420px;
+    color: #fff;
+  }
+  
+  .qa-small {
+    display: block;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 6px;
+  }
+  
+  .qa-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+  
+  .qa-q {
+    font-size: 64px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+  
+  .qa-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dcdcdc;
+    max-width: 380px;
+  }
+
+  .qa-card {
+    background: #eef7fb;              /* exact light blue */
+    padding: 28px 30px 34px;
+    max-width: 420px;
+    height: 100%;
+  }
+  
+  /* header row */
+  .qa-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  
+  /* black square icon */
+  .qa-icon-box {
+    width: 56px;
+    height: 56px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* title */
+  .qa-card-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+    letter-spacing: 0.5px;
+  }
+  
+  /* description text */
+  .qa-card-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7a7a7a;
+    margin: 0 0 18px 74px;   /* aligns text under title */
+    max-width: 300px;
+  }
+  
+  /* phone link */
+  .qa-card-phone {
+    display: block;
+    margin-left: 74px;
+    font-size: 22px;
+    color: #2b7fa8;        /* exact blue */
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .qa-card-phone:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+
+
+
+
+
+
+  
+  /* responsive */
+  @media (max-width: 992px) {
+    .qa-banner-inner {
+      height: 320px;
+    }
+  
+    .qa-title {
+      font-size: 36px;
+    }
+  
+    .qa-q {
+      font-size: 48px;
+    }
+  }
+  

@@ -129,7 +129,17 @@
     margin: 0 auto;
   }
 
-  .circle-bg {
-    display: none; /* hide large circle on mobile */
+  .sleep-btn {
+    padding: 14px 34px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+  }
+}
+@media (max-width: 480px) {
+  .sleep-btn {
+    width: 100%;              /* full-width button on small screens */
+    padding: 14px 20px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 }
