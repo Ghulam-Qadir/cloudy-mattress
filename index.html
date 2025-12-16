@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cloudy Mattress</title>
-  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<!-- Bootstrap CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +16,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-	href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-	rel="stylesheet">
+		href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+		rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/layout.css">
@@ -32,6 +33,7 @@
 	<link rel="stylesheet" href="assets/css/blog-post.css">
 	<link rel="stylesheet" href="assets/css/footer.css">
 </head>
+
 <body>
 	<header class="position-absolute w-100">
 		<div class="top-nav container d-flex justify-content-end py-2">
@@ -51,416 +53,836 @@
 					<img src="assets/img/logo.png" class="navbar-logo-img">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav mx-auto">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="mattressDropdown" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Mattress
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="mattressDropdown">
-						<li><a class="dropdown-item" href="#">Queen</a></li>
-						<li><a class="dropdown-item" href="#">King</a></li>
-						<li><a class="dropdown-item" href="#">Twin</a></li>
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="mattressDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Mattress
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="mattressDropdown">
+								<li><a class="dropdown-item" href="#">Queen</a></li>
+								<li><a class="dropdown-item" href="#">King</a></li>
+								<li><a class="dropdown-item" href="#">Twin</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="basesDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Bases
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="basesDropdown">
+								<li><a class="dropdown-item" href="#">Foundation</a></li>
+								<li><a class="dropdown-item" href="#">Box Spring</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Adjustable Beds</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="pillowsDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Pillows
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="pillowsDropdown">
+								<li><a class="dropdown-item" href="#">Memory Foam</a></li>
+								<li><a class="dropdown-item" href="#">Down</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="furnitureDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Furniture
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="furnitureDropdown">
+								<li><a class="dropdown-item" href="#">Bed Frames</a></li>
+								<li><a class="dropdown-item" href="#">Nightstands</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Kids
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="kidsDropdown">
+								<li><a class="dropdown-item" href="#">Crib Mattresses</a></li>
+								<li><a class="dropdown-item" href="#">Bunk Beds</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="brandsDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Shop Brands
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="brandsDropdown">
+								<li><a class="dropdown-item" href="#">Brand A</a></li>
+								<li><a class="dropdown-item" href="#">Brand B</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dealsDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Bundle Deals
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dealsDropdown">
+								<li><a class="dropdown-item" href="#">Mattress + Base</a></li>
+								<li><a class="dropdown-item" href="#">Pillow Pack</a></li>
+							</ul>
+						</li>
 					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="basesDropdown" role="button" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					Bases
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="basesDropdown">
-					<li><a class="dropdown-item" href="#">Foundation</a></li>
-					<li><a class="dropdown-item" href="#">Box Spring</a></li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Adjustable Beds</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="pillowsDropdown" role="button" data-bs-toggle="dropdown"
-				aria-expanded="false">
-				Pillows
-			</a>
-			<ul class="dropdown-menu" aria-labelledby="pillowsDropdown">
-				<li><a class="dropdown-item" href="#">Memory Foam</a></li>
-				<li><a class="dropdown-item" href="#">Down</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="furnitureDropdown" role="button"
-			data-bs-toggle="dropdown" aria-expanded="false">
-			Furniture
-		</a>
-		<ul class="dropdown-menu" aria-labelledby="furnitureDropdown">
-			<li><a class="dropdown-item" href="#">Bed Frames</a></li>
-			<li><a class="dropdown-item" href="#">Nightstands</a></li>
-		</ul>
-	</li>
-	<li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown"
-		aria-expanded="false">
-		Kids
-	</a>
-	<ul class="dropdown-menu" aria-labelledby="kidsDropdown">
-		<li><a class="dropdown-item" href="#">Crib Mattresses</a></li>
-		<li><a class="dropdown-item" href="#">Bunk Beds</a></li>
-	</ul>
-</li>
-<li class="nav-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#" id="brandsDropdown" role="button" data-bs-toggle="dropdown"
-	aria-expanded="false">
-	Shop Brands
-</a>
-<ul class="dropdown-menu" aria-labelledby="brandsDropdown">
-	<li><a class="dropdown-item" href="#">Brand A</a></li>
-	<li><a class="dropdown-item" href="#">Brand B</a></li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#" id="dealsDropdown" role="button" data-bs-toggle="dropdown"
-	aria-expanded="false">
-	Bundle Deals
-</a>
-<ul class="dropdown-menu" aria-labelledby="dealsDropdown">
-	<li><a class="dropdown-item" href="#">Mattress + Base</a></li>
-	<li><a class="dropdown-item" href="#">Pillow Pack</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<main>
-	<section class="hero-section">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 hero-content">
-					<h1 class="hero-title">
-						<span class="title-script">Sleep Like</span>
-						<span class="title-sans">You're on a Cloud</span>
-					</h1>
-					<p class="hero-description">
-						Experience comfort backed by science and loved by
-						<strong>70,000+ customers</strong>.
-					</p>
-					<div class="hero-features d-flex justify-content-start">
-						<div class="feature-card">
-							<div class="feature-icon">
-								<img src="assets/img/shipping-icon.svg" alt="Free Shipping">
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="hero-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 hero-content">
+						<h1 class="hero-title">
+							<span class="title-script">Sleep Like</span>
+							<span class="title-sans">You're on a Cloud</span>
+						</h1>
+						<p class="hero-description">
+							Experience comfort backed by science and loved by
+							<strong>70,000+ customers</strong>.
+						</p>
+						<div class="hero-features d-flex justify-content-start">
+							<div class="feature-card">
+								<div class="feature-icon">
+									<img src="assets/img/shipping-icon.svg" alt="Free Shipping">
+								</div>
+								<div class="feature-label">
+									<span class="label-line-1">FREE</span>
+									<span class="label-line-2">SHIPPING</span>
+								</div>
 							</div>
-							<div class="feature-label">
-								<span class="label-line-1">FREE</span>
-								<span class="label-line-2">SHIPPING</span>
+							<div class="feature-card">
+								<div class="feature-icon">
+									<img src="assets/img/trial-icon.svg" alt="100 Nights Trial">
+								</div>
+								<div class="feature-label">
+									<span class="label-line-1">100</span>
+									<span class="label-line-2">NIGHTS TRIAL</span>
+								</div>
+							</div>
+							<div class="feature-card">
+								<div class="feature-icon">
+									<img src="assets/img/guidance-icon.svg" alt="Expert Guidance">
+								</div>
+								<div class="feature-label">
+									<span class="label-line-1">EXPERT</span>
+									<span class="label-line-2">GUIDANCE</span>
+								</div>
 							</div>
 						</div>
-						<div class="feature-card">
-							<div class="feature-icon">
-								<img src="assets/img/trial-icon.svg" alt="100 Nights Trial">
-							</div>
-							<div class="feature-label">
-								<span class="label-line-1">100</span>
-								<span class="label-line-2">NIGHTS TRIAL</span>
-							</div>
-						</div>
-						<div class="feature-card">
-							<div class="feature-icon">
-								<img src="assets/img/guidance-icon.svg" alt="Expert Guidance">
-							</div>
-							<div class="feature-label">
-								<span class="label-line-1">EXPERT</span>
-								<span class="label-line-2">GUIDANCE</span>
-							</div>
+						<div class="hero-actions">
+							<a href="#" class="btn btn-primary btn-quiz">
+								Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
+							</a>
+							<p class="quiz-subtext">Discover your perfect mattress in just 2 minutes.</p>
 						</div>
 					</div>
-					<div class="hero-actions">
-						<a href="#" class="btn btn-primary btn-quiz">
-							Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
-						</a>
-						<p class="quiz-subtext">Discover your perfect mattress in just 2 minutes.</p>
-					</div>
-				</div>
-				<div class="col-lg-6 hero-media">
-					<!-- Placeholder for hero image composition -->
-					<img src="assets/img/hero-image.png" alt="Woman sleeping on a cloudy mattress" class="img-fluid">
-				</div>
-			</div>
-		</div>
-		<div class="features-wrap container">
-			<div class="features">
-				<div class="feature">
-					<div class="icon">
-						<img src="assets/img/shipping-car.svg" alt="">
-					</div>
-					<span class="label-small">FREE</span>
-					<span class="label-big">SHIPPING</span>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<img src="assets/img/return.svg" alt="">
-					</div>
-					<span class="label-small">EASY</span>
-					<span class="label-big">RETURN</span>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<img src="assets/img/financing.svg" alt="">
-					</div>
-					<span class="label-small">QUICK</span>
-					<span class="label-big">FINANCING</span>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<img src="assets/img/secure-checkout.svg" alt="">
-					</div>
-					<span class="label-small">SECURE</span>
-					<span class="label-big">CHECKOUT</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero Section End -->
-	<!-- PRODUCT SECTION (paste into your page where needed) -->
-	<section class="product-section">
-		<div class="ps-container">
-			<!-- header / hero title -->
-			<div class="ps-hero">
-				<div class="ps-hero-left">
-					<div class="ps-hero-badges">
-						<img src="assets/img/improve-sleep (1).png" alt="">
-					</div>
-					<div>
-						<div class="eyebrow">PRODUCTS TO</div>
-						<h2 class="hero-title">IMPROVE YOUR SLEEP</h2>
-						<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-						day</p>
-						<nav class="ps-pills" aria-label="product categories">
-							<button class="pill active">Mattress</button>
-							<button class="pill">Adjustable bases</button>
-							<button class="pill">Soft Pillows</button>
-							<button class="pill">Bedding</button>
-						</nav>
+					<div class="col-lg-6 hero-media">
+						<!-- Placeholder for hero image composition -->
+						<img src="assets/img/hero-image.png" alt="Woman sleeping on a cloudy mattress"
+							class="img-fluid">
 					</div>
 				</div>
 			</div>
-			<!-- section title and arrows -->
-			<div class="ps-section-controls">
-				<h3 class="ps-section-title">MATTRESS <a href="#" class="view-all">View All Mattress</a></h3>
-				<div class="ps-arrows">
-					<button class="arrow prev" aria-label="previous">&lsaquo;</button>
-					<button class="arrow next" aria-label="next">&rsaquo;</button>
-				</div>
-			</div>
-			<!-- cards row -->
-			<div class="ps-cards">
-				<!-- card -->
-				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-				data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-				<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-				<div class="product-details">
-					<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-					<div class="reviews">
-						<span class="stars">⭐⭐⭐⭐⭐</span>
-						<span class="review-count">9 Reviews</span>
+			<div class="features-wrap container">
+				<div class="features">
+					<div class="feature">
+						<div class="icon">
+							<img src="assets/img/shipping-car.svg" alt="">
+						</div>
+						<span class="label-small">FREE</span>
+						<span class="label-big">SHIPPING</span>
 					</div>
-					<div class="price">
-						<span class="original-price">$2,999.00</span>
-						<span class="current-price">$2,099.00</span>
-						<span class="price-info">(Starting Price)</span>
+					<div class="feature">
+						<div class="icon">
+							<img src="assets/img/return.svg" alt="">
+						</div>
+						<span class="label-small">EASY</span>
+						<span class="label-big">RETURN</span>
 					</div>
-					<div class="size-options">
-						<button class="active">Twin</button>
-						<button>Twin XL</button>
-						<button>Full</button>
-						<button>Queen</button>
-						<button>3 More</button>
+					<div class="feature">
+						<div class="icon">
+							<img src="assets/img/financing.svg" alt="">
+						</div>
+						<span class="label-small">QUICK</span>
+						<span class="label-big">FINANCING</span>
 					</div>
-					<div class="brand-info">
-						<span>Brand: <strong>Cloudy Mattress</strong></span>
-						<button class="shop-now">SHOP NOW</button>
+					<div class="feature">
+						<div class="icon">
+							<img src="assets/img/secure-checkout.svg" alt="">
+						</div>
+						<span class="label-small">SECURE</span>
+						<span class="label-big">CHECKOUT</span>
 					</div>
 				</div>
 			</div>
-			<!-- card 2 -->
-			<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-			data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-			<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-			<div class="product-details">
-				<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-				<div class="reviews">
-					<span class="stars">⭐⭐⭐⭐⭐</span>
-					<span class="review-count">9 Reviews</span>
-				</div>
-				<div class="price">
-					<span class="original-price">$2,999.00</span>
-					<span class="current-price">$2,099.00</span>
-					<span class="price-info">(Starting Price)</span>
-				</div>
-				<div class="size-options">
-					<button class="active">Twin</button>
-					<button>Twin XL</button>
-					<button>Full</button>
-					<button>Queen</button>
-					<button>3 More</button>
-				</div>
-				<div class="brand-info">
-					<span>Brand: <strong>Cloudy Mattress</strong></span>
-					<button class="shop-now">SHOP NOW</button>
-				</div>
-			</div>
-		</div>
-		<!-- card 3 -->
-		<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-		data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-		<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-		<div class="product-details">
-			<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-			<div class="reviews">
-				<span class="stars">⭐⭐⭐⭐⭐</span>
-				<span class="review-count">9 Reviews</span>
-			</div>
-			<div class="price">
-				<span class="original-price">$2,999.00</span>
-				<span class="current-price">$2,099.00</span>
-				<span class="price-info">(Starting Price)</span>
-			</div>
-			<div class="size-options">
-				<button class="active">Twin</button>
-				<button>Twin XL</button>
-				<button>Full</button>
-				<button>Queen</button>
-				<button>3 More</button>
-			</div>
-			<div class="brand-info">
-				<span>Brand: <strong>Cloudy Mattress</strong></span>
-				<button class="shop-now">SHOP NOW</button>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-</section>
-<!-- SLEEP SECTION -->
-<section class="sleep-section">
-	<div class="sleep-container">
-		<!-- LEFT CONTENT -->
-		<div class="sleep-left">
-			<h2 class="sleep-heading">
-				Let’s Find The<br>
-				<span class="sleep-bold">Perfect Sleep</span><br>
-				Solution for you
-			</h2>
-			<p class="sleep-desc">
-				Finding the perfect mattress is the key to waking up pain-free and fully rested.
-				Whether you struggle with back pain, joint discomfort, or just can’t find the right
-				balance between support and comfort, we’ve got you covered!
-			</p>
-			<a href="#" class="sleep-btn">
-				Take the Mattress Quiz
-				<span class="arrow">→</span>
-			</a>
-			<p class="sleep-small">
-				Take our quick 2-minute quiz to discover the mattress that’s designed for your
-				unique sleep needs.
-			</p>
-		</div>
-		<!-- RIGHT SIDE - with overflow enabled -->
-		<div class="sleep-right">
-			<img src="assets/img/sleeping-girl.png" alt="sleeping person" class="sleep-img">
-		</div>
-	</div>
-</section>
-<!-- BEST SELLERS SECTION (section only) -->
-<section class="bs-section">
-	<div class="bs-wrap">
-		<!-- header / hero title -->
-		<div class="ps-hero">
-			<div class="ps-hero-left">
-				<div class="ps-hero-badges">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div>
-					<div class="eyebrow"> SHOP OUR BEST SELLERS</div>
-					<h2 class="hero-title"> AT DISCOUNTED PRICES</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-					<nav class="ps-pills" aria-label="product categories">
-						<button class="pill active">Mattress</button>
-						<button class="pill">Adjustable bases</button>
-						<button class="pill">Soft Pillows</button>
-						<button class="pill">Bedding</button>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<!-- MAIN: left promo + right cards -->
-		<div class="bs-main">
-			<!-- Left promo -->
-			<aside class="promo">
-				<img src="assets/img/saller-half-bg.png" alt="promo" class="promo-img">
-				<div class="promo-box">
-					<div class="promo-small">SHOP OUR</div>
-					<div class="promo-large">
-						BEST<br>SELLERS<br>BEST<br>DISCOUNTS
+		</section>
+		<!-- Hero Section End -->
+		<!-- PRODUCT SECTION (paste into your page where needed) -->
+		<section class="product-section">
+			<div class="ps-container">
+				<!-- header / hero title -->
+				<div class="ps-hero">
+					<div class="ps-hero-left">
+						<div class="ps-hero-badges">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div>
+							<div class="eyebrow">PRODUCTS TO</div>
+							<h2 class="hero-title">IMPROVE YOUR SLEEP</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+							<nav class="ps-pills" aria-label="product categories">
+								<button class="pill active">Mattress</button>
+								<button class="pill">Adjustable bases</button>
+								<button class="pill">Soft Pillows</button>
+								<button class="pill">Bedding</button>
+							</nav>
+						</div>
 					</div>
 				</div>
-			</aside>
-			<!-- Right cards (2x2) -->
-			<div class="card-wraper">
 				<!-- section title and arrows -->
 				<div class="ps-section-controls">
-					<h3 class="ps-section-title"></h3>
+					<h3 class="ps-section-title">MATTRESS <a href="#" class="view-all">View All Mattress</a></h3>
 					<div class="ps-arrows">
 						<button class="arrow prev" aria-label="previous">&lsaquo;</button>
 						<button class="arrow next" aria-label="next">&rsaquo;</button>
 					</div>
 				</div>
-				<div class="cards">
-					<article class="card">
-						<div class="card-img"><img src="assets/img/productimage.jpg" alt="product"></div>
-						<div class="card-body">
-							<span class="badge">15% OFF</span>
-							<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
-							<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a></div>
-							<div class="card-price"><span class="price-main">$2,099.00</span> <span class="price-note">(Starting
-							Price)</span></div>
-						</div>
-					</article>
-					<article class="card">
-						<div class="card-img"><img src="assets/img/productimage.jpg" alt="product"></div>
-						<div class="card-body">
-							<span class="badge">15% OFF</span>
-							<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
-							<div class="card-rating">★★★★★ <a class="reviews" href="#">14 Reviews</a></div>
-							<div class="card-price"><span class="price-old">$999.00</span> <span
-								class="price-main sale">$688.00</span> <span class="price-note">(Starting Price)</span></div>
-							</div>
-						</article>
-						<article class="card">
-							<div class="card-img"><img src="assets/img/productimage.jpg" alt="product"></div>
-							<div class="card-body">
-								<span class="badge">15% OFF</span>
-								<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
-								<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a></div>
-								<div class="card-price"><span class="price-main">$2,099.00</span> <span class="price-note">(Starting
-								Price)</span></div>
-							</div>
-						</article>
-						<article class="card">
-							<div class="card-img"><img src="assets/img/productimage.jpg" alt="product"></div>
-							<div class="card-body">
-								<span class="badge">15% OFF</span>
-								<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
-								<div class="card-rating">★★★★★ <a class="reviews" href="#">14 Reviews</a></div>
-								<div class="card-price"><span class="price-old">$999.00</span> <span
-									class="price-main sale">$688.00</span> <span class="price-note">(Starting Price)</span></div>
+				<!-- cards row -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<!-- card -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
 								</div>
-							</article>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
 						</div>
+						<!-- card 2 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 3 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 3 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SLEEP SECTION -->
+		<section class="sleep-section">
+			<div class="sleep-container">
+				<!-- LEFT CONTENT -->
+				<div class="sleep-left">
+					<h2 class="sleep-heading">
+						Let’s Find The<br>
+						<span class="sleep-bold">Perfect Sleep</span><br>
+						Solution for you
+					</h2>
+					<p class="sleep-desc">
+						Finding the perfect mattress is the key to waking up pain-free and fully rested.
+						Whether you struggle with back pain, joint discomfort, or just can’t find the right
+						balance between support and comfort, we’ve got you covered!
+					</p>
+					<a href="#" class="sleep-btn">
+						Take the Mattress Quiz
+						<span class="arrow">→</span>
+					</a>
+					<p class="sleep-small">
+						Take our quick 2-minute quiz to discover the mattress that’s designed for your
+						unique sleep needs.
+					</p>
+				</div>
+				<!-- RIGHT SIDE - with overflow enabled -->
+				<div class="sleep-right">
+					<img src="assets/img/sleeping-girl.png" alt="sleeping person" class="sleep-img">
+				</div>
+			</div>
+		</section>
+		<!-- BEST SELLERS SECTION (section only) -->
+		<section class="bs-section">
+			<div class="bs-wrap">
+				<!-- header / hero title -->
+				<div class="ps-hero">
+					<div class="ps-hero-left">
+						<div class="ps-hero-badges">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div>
+							<div class="eyebrow"> SHOP OUR BEST SELLERS</div>
+							<h2 class="hero-title"> AT DISCOUNTED PRICES</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+							<nav class="ps-pills" aria-label="product categories">
+								<button class="pill active">Mattress</button>
+								<button class="pill">Adjustable bases</button>
+								<button class="pill">Soft Pillows</button>
+								<button class="pill">Bedding</button>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- MAIN: left promo + right cards -->
+				<div class="bs-main">
+					<!-- Left promo -->
+					<aside class="promo">
+						<img src="assets/img/saller-half-bg.png" alt="promo" class="promo-img">
+						<div class="promo-box">
+							<div class="promo-small">SHOP OUR</div>
+							<div class="promo-large">
+								BEST<br>SELLERS<br>BEST<br>DISCOUNTS
+							</div>
+						</div>
+					</aside>
+					<!-- Right cards (2x2) -->
+					<div class="card-wraper">
+						<!-- section title and arrows -->
+						<div class="ps-section-controls">
+							<h3 class="ps-section-title"></h3>
+							<div class="ps-arrows">
+								<button class="arrow prev" aria-label="previous">&lsaquo;</button>
+								<button class="arrow next" aria-label="next">&rsaquo;</button>
+							</div>
+						</div>
+						<div class="swiper mySwipergroup">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cards">
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">DreamCloud Hybrid Luxe 4.0 Queen Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">9 Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-main">$2,099.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-img"><img src="assets/img/productimage.jpg" alt="product">
+											</div>
+											<div class="card-body">
+												<span class="badge">15% OFF</span>
+												<h3 class="card-title">Dream Cloud Premier Hybrid Mattress</h3>
+												<div class="card-rating">★★★★★ <a class="reviews" href="#">14
+														Reviews</a>
+												</div>
+												<div class="card-price"><span class="price-old">$999.00</span> <span
+														class="price-main sale">$688.00</span> <span
+														class="price-note">(Starting
+														Price)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -475,8 +897,9 @@
 					<div>
 						<div class="brand-eyebrow">SHOP BY BRAND</div>
 						<h2 class="brand-title">DISCOVER TOP NAMES YOU TRUST</h2>
-						<p class="brand-sub">Designed to bring you quality, comfort, and lasting value, choose from the best in the
-						business.</p>
+						<p class="brand-sub">Designed to bring you quality, comfort, and lasting value, choose from the
+							best in the
+							business.</p>
 					</div>
 				</div>
 				<!-- LOGO SLIDER (INFINITE) -->
@@ -534,994 +957,1116 @@
 			<!-- cards row -->
 			<div class="ps-cards mt-4">
 				<!-- card -->
-				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-				data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-				<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-				<div class="product-details">
-					<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-					<div class="reviews">
-						<span class="stars">⭐⭐⭐⭐⭐</span>
-						<span class="review-count">9 Reviews</span>
-					</div>
-					<div class="price">
-						<span class="original-price">$2,999.00</span>
-						<span class="current-price">$2,099.00</span>
-						<span class="price-info">(Starting Price)</span>
-					</div>
-					<div class="size-options">
-						<button class="active">Twin</button>
-						<button>Twin XL</button>
-						<button>Full</button>
-						<button>Queen</button>
-						<button>3 More</button>
-					</div>
-					<div class="brand-info">
-						<span>Brand: <strong>Cloudy Mattress</strong></span>
-						<button class="shop-now">SHOP NOW</button>
-					</div>
-				</div>
-			</div>
-			<!-- card 2 -->
-			<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-			data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-			<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-			<div class="product-details">
-				<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-				<div class="reviews">
-					<span class="stars">⭐⭐⭐⭐⭐</span>
-					<span class="review-count">9 Reviews</span>
-				</div>
-				<div class="price">
-					<span class="original-price">$2,999.00</span>
-					<span class="current-price">$2,099.00</span>
-					<span class="price-info">(Starting Price)</span>
-				</div>
-				<div class="size-options">
-					<button class="active">Twin</button>
-					<button>Twin XL</button>
-					<button>Full</button>
-					<button>Queen</button>
-					<button>3 More</button>
-				</div>
-				<div class="brand-info">
-					<span>Brand: <strong>Cloudy Mattress</strong></span>
-					<button class="shop-now">SHOP NOW</button>
-				</div>
-			</div>
-		</div>
-		<!-- card 3 -->
-		<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-		data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-		<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-		<div class="product-details">
-			<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-			<div class="reviews">
-				<span class="stars">⭐⭐⭐⭐⭐</span>
-				<span class="review-count">9 Reviews</span>
-			</div>
-			<div class="price">
-				<span class="original-price">$2,999.00</span>
-				<span class="current-price">$2,099.00</span>
-				<span class="price-info">(Starting Price)</span>
-			</div>
-			<div class="size-options">
-				<button class="active">Twin</button>
-				<button>Twin XL</button>
-				<button>Full</button>
-				<button>Queen</button>
-				<button>3 More</button>
-			</div>
-			<div class="brand-info">
-				<span>Brand: <strong>Cloudy Mattress</strong></span>
-				<button class="shop-now">SHOP NOW</button>
-			</div>
-		</div>
-	</div>
-	<!-- card -->
-	<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-	data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-	<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-	<div class="product-details">
-		<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-		<div class="reviews">
-			<span class="stars">⭐⭐⭐⭐⭐</span>
-			<span class="review-count">9 Reviews</span>
-		</div>
-		<div class="price">
-			<span class="original-price">$2,999.00</span>
-			<span class="current-price">$2,099.00</span>
-			<span class="price-info">(Starting Price)</span>
-		</div>
-		<div class="size-options">
-			<button class="active">Twin</button>
-			<button>Twin XL</button>
-			<button>Full</button>
-			<button>Queen</button>
-			<button>3 More</button>
-		</div>
-		<div class="brand-info">
-			<span>Brand: <strong>Cloudy Mattress</strong></span>
-			<button class="shop-now">SHOP NOW</button>
-		</div>
-	</div>
-</div>
-<!-- card 2 -->
-<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-<div class="product-details">
-	<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-	<div class="reviews">
-		<span class="stars">⭐⭐⭐⭐⭐</span>
-		<span class="review-count">9 Reviews</span>
-	</div>
-	<div class="price">
-		<span class="original-price">$2,999.00</span>
-		<span class="current-price">$2,099.00</span>
-		<span class="price-info">(Starting Price)</span>
-	</div>
-	<div class="size-options">
-		<button class="active">Twin</button>
-		<button>Twin XL</button>
-		<button>Full</button>
-		<button>Queen</button>
-		<button>3 More</button>
-	</div>
-	<div class="brand-info">
-		<span>Brand: <strong>Cloudy Mattress</strong></span>
-		<button class="shop-now">SHOP NOW</button>
-	</div>
-</div>
-</div>
-<!-- card 3 -->
-<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-<div class="product-details">
-	<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-	<div class="reviews">
-		<span class="stars">⭐⭐⭐⭐⭐</span>
-		<span class="review-count">9 Reviews</span>
-	</div>
-	<div class="price">
-		<span class="original-price">$2,999.00</span>
-		<span class="current-price">$2,099.00</span>
-		<span class="price-info">(Starting Price)</span>
-	</div>
-	<div class="size-options">
-		<button class="active">Twin</button>
-		<button>Twin XL</button>
-		<button>Full</button>
-		<button>Queen</button>
-		<button>3 More</button>
-	</div>
-	<div class="brand-info">
-		<span>Brand: <strong>Cloudy Mattress</strong></span>
-		<button class="shop-now">SHOP NOW</button>
-	</div>
-</div>
-</div>
-</div>
-<!-- HERO BANNER -->
-<div class="brand-hero-banner mt-4">
-	<img src="assets/img/financing.png" alt="Ideal Bed banner">
-	<div class="brand-hero-overlay">
-		<div class="discount-text">
-			<span class="percent">0%</span>
-			<span class="get">Financing</span>
-			<span class="">With flexible financing options, you can pay over time with low monthly payments</span>
-			<button class="sub">On Selected Stock</button>
-		</div>
-		<div class="brand-logo">
-			<img src="assets/img/idealbed.png" alt="Ideal Bed">
-		</div>
-	</div>
-</div>
-</section>
-<section class="product-section">
-	<div class="ps-container">
-		<!-- header / hero title -->
-		<div class="ps-hero">
-			<div class="ps-hero-left">
-				<div class="ps-hero-badges">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div>
-					<div class="eyebrow">PRODUCTS TO</div>
-					<h2 class="hero-title">FIT YOUR SPACE</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-					<nav class="ps-pills" aria-label="product categories">
-						<button class="pill active">Mattress</button>
-						<button class="pill">Adjustable bases</button>
-						<button class="pill">Soft Pillows</button>
-						<button class="pill">Bedding</button>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<!-- section title and arrows -->
-		<div class="ps-section-controls">
-			<h3 class="ps-section-title">BEDS IN TWIN XL SIZE <a href="#" class="view-all">View All Mattress</a></h3>
-			<div class="ps-arrows">
-				<button class="arrow prev" aria-label="previous">&lsaquo;</button>
-				<button class="arrow next" aria-label="next">&rsaquo;</button>
-			</div>
-		</div>
-		<!-- cards row -->
-		<div class="ps-cards">
-			<!-- card -->
-			<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-			data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-			<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-			<div class="product-details">
-				<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-				<div class="reviews">
-					<span class="stars">⭐⭐⭐⭐⭐</span>
-					<span class="review-count">9 Reviews</span>
-				</div>
-				<div class="price">
-					<span class="original-price">$2,999.00</span>
-					<span class="current-price">$2,099.00</span>
-					<span class="price-info">(Starting Price)</span>
-				</div>
-				<div class="size-options">
-					<button class="active">Twin</button>
-					<button>Twin XL</button>
-					<button>Full</button>
-					<button>Queen</button>
-					<button>3 More</button>
-				</div>
-				<div class="brand-info">
-					<span>Brand: <strong>Cloudy Mattress</strong></span>
-					<button class="shop-now">SHOP NOW</button>
-				</div>
-			</div>
-		</div>
-		<!-- card 2 -->
-		<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-		data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-		<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-		<div class="product-details">
-			<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-			<div class="reviews">
-				<span class="stars">⭐⭐⭐⭐⭐</span>
-				<span class="review-count">9 Reviews</span>
-			</div>
-			<div class="price">
-				<span class="original-price">$2,999.00</span>
-				<span class="current-price">$2,099.00</span>
-				<span class="price-info">(Starting Price)</span>
-			</div>
-			<div class="size-options">
-				<button class="active">Twin</button>
-				<button>Twin XL</button>
-				<button>Full</button>
-				<button>Queen</button>
-				<button>3 More</button>
-			</div>
-			<div class="brand-info">
-				<span>Brand: <strong>Cloudy Mattress</strong></span>
-				<button class="shop-now">SHOP NOW</button>
-			</div>
-		</div>
-	</div>
-	<!-- card 3 -->
-	<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen" data-brand="dream-cloud"
-	data-original-price="2999" data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
-	<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
-	<div class="product-details">
-		<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
-		<div class="reviews">
-			<span class="stars">⭐⭐⭐⭐⭐</span>
-			<span class="review-count">9 Reviews</span>
-		</div>
-		<div class="price">
-			<span class="original-price">$2,999.00</span>
-			<span class="current-price">$2,099.00</span>
-			<span class="price-info">(Starting Price)</span>
-		</div>
-		<div class="size-options">
-			<button class="active">Twin</button>
-			<button>Twin XL</button>
-			<button>Full</button>
-			<button>Queen</button>
-			<button>3 More</button>
-		</div>
-		<div class="brand-info">
-			<span>Brand: <strong>Cloudy Mattress</strong></span>
-			<button class="shop-now">SHOP NOW</button>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-	<div class="container">
-		<!-- header / hero title -->
-		<div class="ps-hero" bis_skin_checked="1">
-			<div class="ps-hero-left" bis_skin_checked="1">
-				<div class="ps-hero-badges" bis_skin_checked="1">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div bis_skin_checked="1">
-					<div class="eyebrow" bis_skin_checked="1">MATTRESS BY TECHNOLOGY</div>
-					<h2 class="hero-title">DISCOVER INNOVATIONS FOR YOUR BEST SLEEP</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-	
-				</div>
-			</div>
-		</div>
-		<div class="ps-cards mt-4" bis_skin_checked="1">
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
 						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
 						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
 						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
-						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
-						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
-						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
-						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
-						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
-						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
-						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-			<div class="plush-card">
-				<!-- IMAGE -->
-				<div class="plush-img">
-					<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
-				</div>
-				<!-- CONTENT -->
-				<div class="plush-body">
-					<h3 class="plush-title">PLUSH</h3>
-					<div class="plush-price">
-						$2,099.00 <span>(Starting Price)</span>
-					</div>
-					<!-- SUPPORT BAR -->
-					<div class="metric">
-						<div class="metric-label">Support</div>
-						<div class="metric-bar">
-							<span style="width:65%"></span>
-						</div>
-					</div>
-					<!-- PRESSURE RELIEF BAR -->
-					<div class="metric">
-						<div class="metric-label">Pressure Relief</div>
-						<div class="metric-bar">
-							<span style="width:55%"></span>
-						</div>
-					</div>
-					<a href="#" class="plush-btn">View all</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="mt-4">
-	<div class="container">
-		<!-- header / hero title -->
-		<div class="ps-hero" bis_skin_checked="1">
-			<div class="ps-hero-left" bis_skin_checked="1">
-				<div class="ps-hero-badges" bis_skin_checked="1">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div bis_skin_checked="1">
-					<div class="eyebrow" bis_skin_checked="1">BUY MORE</div>
-					<h2 class="hero-title">SAVE MORE</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-				</div>
-			</div>
-		</div>
-		<div class="bundle-section">
-			<div class="bundle-container">
-				<!-- Top row -->
-				<div class="bundle-top">
-					<div class="bundle-save">Save $1,173.00</div>
-					<div class="bundle-nav">
-						<button class="nav-btn prev" aria-label="Previous"></button>
-						<button class="nav-btn next" aria-label="Next"></button>
-					</div>
-				</div>
-				<!-- Images -->
-				<div class="bundle-images">
-					<div class="bundle-img">
-						<img src="assets/img/products-box.jpg" alt="">
-					</div>
-					<div class="bundle-img">
-						<img src="assets/img/products-box1.jpg" alt="">
-					</div>
-					<div class="bundle-img">
-						<img src="assets/img/products-box2.jpg" alt="">
-					</div>
-				</div>
-				<!-- Price -->
-				<div class="bundle-price">$4,295.00</div>
-				<!-- Title -->
-				<div class="bundle-title">
-					Bundle Custom Name Smart 6i Custom Adjustable Bed Base, Wireless,<br>
-					Bluetooth, Pillow Tilt iDealBed
-				</div>
-				<!-- Button -->
-				<a href="#" class="bundle-btn">
-					<span class="cart-icon">🛒</span>
-					Shop bundle
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- QA Section -->
-<section>
-	<div class="container">
-		<!-- header / hero title -->
-		<div class="ps-hero" bis_skin_checked="1">
-			<div class="ps-hero-left" bis_skin_checked="1">
-				<div class="ps-hero-badges" bis_skin_checked="1">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div bis_skin_checked="1">
-					<div class="eyebrow" bis_skin_checked="1">HAVE QUESTIONS?</div>
-					<h2 class="hero-title">WE’VE GOT ANSWERS</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="faq-section">
-		<div class="container">
-			<div class="accordion faq-accordion" id="faqAccordion">
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
-							What makes cloudy mattresses different?
-						</button>
-					</h2>
-					<div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-							What is a mattress in a box? How long does it take for a cloudy mattress to expand?
-						</button>
-					</h2>
-					<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+				<!-- card 2 -->
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
+						</div>
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
+						</div>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
+						</div>
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-							How long will my cloudy mattress last?
-						</button>
-					</h2>
-					<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+				<!-- card 3 -->
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
+						</div>
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
+						</div>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
+						</div>
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
-							How do cloudy mattresses cater to different sleep positions?
-						</button>
-					</h2>
-					<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+				<!-- card -->
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
+						</div>
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
+						</div>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
+						</div>
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
-							Can you expedite shipping?
-						</button>
-					</h2>
-					<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+				<!-- card 2 -->
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
+						</div>
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
+						</div>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
+						</div>
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
-							Do cloudy mattresses contain fiberglass?
-						</button>
-					</h2>
-					<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+				<!-- card 3 -->
+				<div class="product-item" data-price="2099" data-category="hybrid" data-size="queen"
+					data-brand="dream-cloud" data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+					<div class="product-details">
+						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+						<div class="reviews">
+							<span class="stars">⭐⭐⭐⭐⭐</span>
+							<span class="review-count">9 Reviews</span>
 						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
-							Disclaimers
-						</button>
-					</h2>
-					<div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Answer content goes here.
+						<div class="price">
+							<span class="original-price">$2,999.00</span>
+							<span class="current-price">$2,099.00</span>
+							<span class="price-info">(Starting Price)</span>
+						</div>
+						<div class="size-options">
+							<button class="active">Twin</button>
+							<button>Twin XL</button>
+							<button>Full</button>
+							<button>Queen</button>
+							<button>3 More</button>
+						</div>
+						<div class="brand-info">
+							<span>Brand: <strong>Cloudy Mattress</strong></span>
+							<button class="shop-now">SHOP NOW</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- HERO BANNER -->
-			<div class="qa-banner ">
-				<div class="qa-banner-inner px-4">
-					<!-- Background Image -->
-					<img src="assets/img/big-sleeping.jpg" alt="" class="qa-banner-img">
-					<!-- Overlay -->
-					<div class="qa-banner-overlay"></div>
-					<!-- Content -->
-					<div class="container h-100">
-						<div class="row h-100 align-items-center">
-							<div class="col-lg-6">
-								<div class="qa-content">
-									<span class="qa-small">Still</span>
-									<h2 class="qa-title">
-										Have Questions <span class="qa-q">?</span>
-									</h2>
-									<p class="qa-text">
-										Our sleep specialist are dedicated to helping you find
-										the mattress of your dreams. Give us a call or chat
-										with us now
-									</p>
+			<div class="brand-hero-banner mt-4">
+				<img src="assets/img/financing.png" alt="Ideal Bed banner">
+				<div class="brand-hero-overlay">
+					<div class="discount-text">
+						<span class="percent">0%</span>
+						<span class="get">Financing</span>
+						<span class="">With flexible financing options, you can pay over time with low monthly
+							payments</span>
+						<button class="sub">On Selected Stock</button>
+					</div>
+					<div class="brand-logo">
+						<img src="assets/img/idealbed.png" alt="Ideal Bed">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product-section">
+			<div class="ps-container">
+				<!-- header / hero title -->
+				<div class="ps-hero">
+					<div class="ps-hero-left">
+						<div class="ps-hero-badges">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div>
+							<div class="eyebrow">PRODUCTS TO</div>
+							<h2 class="hero-title">FIT YOUR SPACE</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+							<nav class="ps-pills" aria-label="product categories">
+								<button class="pill active">Mattress</button>
+								<button class="pill">Adjustable bases</button>
+								<button class="pill">Soft Pillows</button>
+								<button class="pill">Bedding</button>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- section title and arrows -->
+				<div class="ps-section-controls">
+					<h3 class="ps-section-title">BEDS IN TWIN XL SIZE <a href="#" class="view-all">View All Mattress</a>
+					</h3>
+					<div class="ps-arrows">
+						<button class="arrow prev" aria-label="previous">&lsaquo;</button>
+						<button class="arrow next" aria-label="next">&rsaquo;</button>
+					</div>
+				</div>
+				<!-- cards row -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<!-- card -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 3 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- card -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+						<!-- card 3 -->
+						<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
+							data-size="queen" data-brand="dream-cloud" data-original-price="2999"
+							data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+							<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
+							<div class="product-details">
+								<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
+								<div class="reviews">
+									<span class="stars">⭐⭐⭐⭐⭐</span>
+									<span class="review-count">9 Reviews</span>
+								</div>
+								<div class="price">
+									<span class="original-price">$2,999.00</span>
+									<span class="current-price">$2,099.00</span>
+									<span class="price-info">(Starting Price)</span>
+								</div>
+								<div class="size-options">
+									<button class="active">Twin</button>
+									<button>Twin XL</button>
+									<button>Full</button>
+									<button>Queen</button>
+									<button>3 More</button>
+								</div>
+								<div class="brand-info">
+									<span>Brand: <strong>Cloudy Mattress</strong></span>
+									<button class="shop-now">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section>
+			<div class="container">
+				<!-- header / hero title -->
+				<div class="ps-hero" bis_skin_checked="1">
+					<div class="ps-hero-left" bis_skin_checked="1">
+						<div class="ps-hero-badges" bis_skin_checked="1">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div bis_skin_checked="1">
+							<div class="eyebrow" bis_skin_checked="1">MATTRESS BY TECHNOLOGY</div>
+							<h2 class="hero-title">DISCOVER INNOVATIONS FOR YOUR BEST SLEEP</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="ps-cards mt-4" bis_skin_checked="1">
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+					<div class="plush-card">
+						<!-- IMAGE -->
+						<div class="plush-img">
+							<img src="assets/img/smiley-mother-kid-hiding-blanket.png" alt="Plush mattress">
+						</div>
+						<!-- CONTENT -->
+						<div class="plush-body">
+							<h3 class="plush-title">PLUSH</h3>
+							<div class="plush-price">
+								$2,099.00 <span>(Starting Price)</span>
+							</div>
+							<!-- SUPPORT BAR -->
+							<div class="metric">
+								<div class="metric-label">Support</div>
+								<div class="metric-bar">
+									<span style="width:65%"></span>
+								</div>
+							</div>
+							<!-- PRESSURE RELIEF BAR -->
+							<div class="metric">
+								<div class="metric-label">Pressure Relief</div>
+								<div class="metric-bar">
+									<span style="width:55%"></span>
+								</div>
+							</div>
+							<a href="#" class="plush-btn">View all</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mt-4">
+			<div class="container">
+				<!-- header / hero title -->
+				<div class="ps-hero" bis_skin_checked="1">
+					<div class="ps-hero-left" bis_skin_checked="1">
+						<div class="ps-hero-badges" bis_skin_checked="1">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div bis_skin_checked="1">
+							<div class="eyebrow" bis_skin_checked="1">BUY MORE</div>
+							<h2 class="hero-title">SAVE MORE</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+						</div>
+					</div>
+				</div>
+				<div class="bundle-section">
+					<div class="bundle-container">
+						<!-- Top row -->
+						<div class="bundle-top">
+							<div class="bundle-save">Save $1,173.00</div>
+							<div class="bundle-nav">
+								<button class="nav-btn prev" aria-label="Previous"></button>
+								<button class="nav-btn next" aria-label="Next"></button>
+							</div>
+						</div>
+						<!-- Images -->
+						<div class="mySwiper swiper">
+							<div class="swiper-wrapper">
+								<div class="bundle-img swiper-slide ">
+									<img src="assets/img/products-box.jpg" alt="">
+								</div>
+								<div class="bundle-img swiper-slide">
+									<img src="assets/img/products-box1.jpg" alt="">
+								</div>
+								<div class="bundle-img swiper-slide">
+									<img src="assets/img/products-box2.jpg" alt="">
+								</div>
+								<div class="bundle-img swiper-slide ">
+									<img src="assets/img/products-box.jpg" alt="">
+								</div>
+								<div class="bundle-img swiper-slide">
+									<img src="assets/img/products-box1.jpg" alt="">
+								</div>
+								<div class="bundle-img swiper-slide">
+									<img src="assets/img/products-box2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- Price -->
+						<div class="bundle-price">$4,295.00</div>
+						<!-- Title -->
+						<div class="bundle-title">
+							Bundle Custom Name Smart 6i Custom Adjustable Bed Base, Wireless,<br>
+							Bluetooth, Pillow Tilt iDealBed
+						</div>
+						<!-- Button -->
+						<a href="#" class="bundle-btn">
+							<span class="cart-icon">🛒</span>
+							Shop bundle
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- QA Section -->
+		<section>
+			<div class="container">
+				<!-- header / hero title -->
+				<div class="ps-hero" bis_skin_checked="1">
+					<div class="ps-hero-left" bis_skin_checked="1">
+						<div class="ps-hero-badges" bis_skin_checked="1">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div bis_skin_checked="1">
+							<div class="eyebrow" bis_skin_checked="1">HAVE QUESTIONS?</div>
+							<h2 class="hero-title">WE’VE GOT ANSWERS</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-section">
+				<div class="container">
+					<div class="accordion faq-accordion" id="faqAccordion">
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq1">
+									What makes cloudy mattresses different?
+								</button>
+							</h2>
+							<div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq2">
+									What is a mattress in a box? How long does it take for a cloudy mattress to expand?
+								</button>
+							</h2>
+							<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq3">
+									How long will my cloudy mattress last?
+								</button>
+							</h2>
+							<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq4">
+									How do cloudy mattresses cater to different sleep positions?
+								</button>
+							</h2>
+							<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq5">
+									Can you expedite shipping?
+								</button>
+							</h2>
+							<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq6">
+									Do cloudy mattresses contain fiberglass?
+								</button>
+							</h2>
+							<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button class="accordion-button collapsed" data-bs-toggle="collapse"
+									data-bs-target="#faq7">
+									Disclaimers
+								</button>
+							</h2>
+							<div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Answer content goes here.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- HERO BANNER -->
+					<div class="qa-banner ">
+						<div class="qa-banner-inner px-4">
+							<!-- Background Image -->
+							<img src="assets/img/big-sleeping.jpg" alt="" class="qa-banner-img">
+							<!-- Overlay -->
+							<div class="qa-banner-overlay"></div>
+							<!-- Content -->
+							<div class="container h-100">
+								<div class="row h-100 align-items-center">
+									<div class="col-lg-6">
+										<div class="qa-content">
+											<span class="qa-small">Still</span>
+											<h2 class="qa-title">
+												Have Questions <span class="qa-q">?</span>
+											</h2>
+											<p class="qa-text">
+												Our sleep specialist are dedicated to helping you find
+												the mattress of your dreams. Give us a call or chat
+												with us now
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Hero banner end -->
+					<div class="row my-4">
+						<div class="col-md-4">
+							<div class="qa-card">
+								<div class="qa-card-header">
+									<div class="qa-icon-box">
+										<i class="bi bi-telephone text-white"></i>
+									</div>
+									<h3 class="qa-card-title">GIVE US A CALL</h3>
+								</div>
+								<p class="qa-card-text">
+									Our team is standing by to help you sleep more comfortably
+								</p>
+								<a href="tel:+14446980004" class="qa-card-phone">
+									+1 444 698 0004
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="qa-card">
+								<div class="qa-card-header">
+									<div class="qa-icon-box">
+										<i class="bi bi-chat text-white"></i>
+									</div>
+									<h3 class="qa-card-title">CHAT WITH US</h3>
+								</div>
+								<p class="qa-card-text">
+									Our team is standing by to help you sleep more comfortably
+								</p>
+								<a href="tel:+14446980004" class="qa-card-phone">
+									Chat Now!
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="qa-card">
+								<div class="qa-card-header">
+									<div class="qa-icon-box">
+										<i class="bi bi-envelope text-white"></i>
+									</div>
+									<h3 class="qa-card-title">SEND US A MAIL</h3>
+								</div>
+								<p class="qa-card-text">
+									Our team is standing by to help you sleep more comfortably
+								</p>
+								<a href="tel:+14446980004" class="qa-card-phone">
+									Send Us an email
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- blog post section -->
+		<section>
+			<div class="container">
+
+
+				<!-- header / hero title -->
+				<div class="ps-hero" bis_skin_checked="1">
+					<div class="ps-hero-left" bis_skin_checked="1">
+						<div class="ps-hero-badges" bis_skin_checked="1">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div bis_skin_checked="1">
+							<div class="eyebrow" bis_skin_checked="1">WANT TO KNOW MORE</div>
+							<h2 class="hero-title">READ THE CLOUDY'S DIGEST</h2>
+							<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
+								ready for the
+								day</p>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="row my-5">
+					<div class="blog-card">
+						<!-- Image -->
+						<div class="blog-image">
+							<img src="assets/img/blog-1.jpg" alt="Blog image">
+						</div>
+						<!-- Content -->
+						<div class="blog-content">
+							<!-- Category -->
+							<span class="blog-tag">Mattresses</span>
+							<!-- Title -->
+							<h3 class="blog-title">
+								Is a Firm Mattress Better for Your Back?
+								What an Expert Says
+							</h3>
+							<!-- Excerpt -->
+							<p class="blog-excerpt">
+								Back pain got you wondering if a firm mattress is the answer?
+								Our ergonomist breaks down the facts and helps you choose
+								what's best for your spine.
+							</p>
+							<!-- Meta -->
+							<div class="blog-meta">
+								<div class="blog-author-icon">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+										<path fill="#000"
+											d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
+									</svg>
+								</div>
+								<div class="blog-meta-text">
+									<div class="blog-author">Cloudy Editorial Team</div>
+									<div class="blog-date">August 2025</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-card">
+						<!-- Image -->
+						<div class="blog-image">
+							<img src="assets/img/blog-2.jpg" alt="Blog image">
+						</div>
+						<!-- Content -->
+						<div class="blog-content">
+							<!-- Category -->
+							<span class="blog-tag">Mattresses</span>
+							<!-- Title -->
+							<h3 class="blog-title">
+								Is a Firm Mattress Better for Your Back?
+								What an Expert Says
+							</h3>
+							<!-- Excerpt -->
+							<p class="blog-excerpt">
+								Back pain got you wondering if a firm mattress is the answer?
+								Our ergonomist breaks down the facts and helps you choose
+								what's best for your spine.
+							</p>
+							<!-- Meta -->
+							<div class="blog-meta">
+								<div class="blog-author-icon">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+										<path fill="#000"
+											d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
+									</svg>
+								</div>
+								<div class="blog-meta-text">
+									<div class="blog-author">Cloudy Editorial Team</div>
+									<div class="blog-date">August 2025</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-card">
+						<!-- Image -->
+						<div class="blog-image">
+							<img src="assets/img/blog-3.jpg" alt="Blog image">
+						</div>
+						<!-- Content -->
+						<div class="blog-content">
+							<!-- Category -->
+							<span class="blog-tag">Mattresses</span>
+							<!-- Title -->
+							<h3 class="blog-title">
+								Is a Firm Mattress Better for Your Back?
+								What an Expert Says
+							</h3>
+							<!-- Excerpt -->
+							<p class="blog-excerpt">
+								Back pain got you wondering if a firm mattress is the answer?
+								Our ergonomist breaks down the facts and helps you choose
+								what's best for your spine.
+							</p>
+							<!-- Meta -->
+							<div class="blog-meta">
+								<div class="blog-author-icon">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+										<path fill="#000"
+											d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
+									</svg>
+								</div>
+								<div class="blog-meta-text">
+									<div class="blog-author">Cloudy Editorial Team</div>
+									<div class="blog-date">August 2025</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Hero banner end -->
-			<div class="row my-4">
-				<div class="col-md-4">
-					<div class="qa-card">
-						<div class="qa-card-header">
-							<div class="qa-icon-box">
-								<i class="bi bi-telephone text-white"></i>
-							</div>
-							<h3 class="qa-card-title">GIVE US A CALL</h3>
+			<!-- container end -->
+		</section>
+		<!-- Newsletter CTA Section (paste into page where needed) -->
+		<section class="nl-section" aria-labelledby="nl-heading">
+			<div class="nl-inner">
+				<!-- LEFT: heading content -->
+				<div class="nl-left">
+					<div class="nl-eyebrow">SIGN-UP TO OUR</div>
+					<h2 id="nl-heading" class="nl-title">
+						<span class="nl-line">NEWSLETTER</span><br>
+						<span class="nl-line">AND SAVE <span class="nl-strong">10%</span> ON</span>
+					</h2>
+					<p class="nl-sub">Your first purchase</p>
+				</div>
+				<!-- RIGHT: input + button -->
+				<div class="nl-right">
+					<form class="nl-form" action="#" method="post" novalidate>
+						<label for="nl-email" class="sr-only">Email address</label>
+						<input id="nl-email" class="nl-input" type="email" name="email" placeholder="Enter your email"
+							required>
+						<div class="nl-actions">
+							<button type="submit" class="nl-btn">Subscribe</button>
 						</div>
-						<p class="qa-card-text">
-							Our team is standing by to help you sleep more comfortably
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Footer Section -->
+		<footer class="footer-bg py-5">
+			<div class="container">
+				<div class="row g-4 align-items-start">
+					<!-- LEFT COLUMN -->
+					<div class="col-lg-4">
+						<img src="assets/img/footer-logo.png" class="footer-logo mb-3" alt="Cloudy Mattress">
+						<h3 class="footer-head mb-3">
+							We Continue to Set the Standard<br>
+							for Restful Nights.
+						</h3>
+						<p class="footer-desc mb-4">
+							Cloudy Mattress was founded on the revolutionary idea of delivering comfort and quality.
+							Our goal is simple: to provide the best customer service with the fastest shipping possible.
+							Our team is here to assist you with any questions; we have some experts you can ask to help
+							you find the right bed for you. You can reach us by email, phone, or live chat.
 						</p>
-						<a href="tel:+14446980004" class="qa-card-phone">
-							+1 444 698 0004
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="qa-card">
-						<div class="qa-card-header">
-							<div class="qa-icon-box">
-								<i class="bi bi-chat text-white"></i>
-							</div>
-							<h3 class="qa-card-title">CHAT WITH US</h3>
-						</div>
-						<p class="qa-card-text">
-							Our team is standing by to help you sleep more comfortably
-						</p>
-						<a href="tel:+14446980004" class="qa-card-phone">
-							Chat Now!
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="qa-card">
-						<div class="qa-card-header">
-							<div class="qa-icon-box">
-								<i class="bi bi-envelope text-white"></i>
-							</div>
-							<h3 class="qa-card-title">SEND US A MAIL</h3>
-						</div>
-						<p class="qa-card-text">
-							Our team is standing by to help you sleep more comfortably
-						</p>
-						<a href="tel:+14446980004" class="qa-card-phone">
-							Send Us an email
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- blog post section -->
-<section>
-	<div class="container">
-    
-
-		<!-- header / hero title -->
-		<div class="ps-hero" bis_skin_checked="1">
-			<div class="ps-hero-left" bis_skin_checked="1">
-				<div class="ps-hero-badges" bis_skin_checked="1">
-					<img src="assets/img/improve-sleep (1).png" alt="">
-				</div>
-				<div bis_skin_checked="1">
-					<div class="eyebrow" bis_skin_checked="1">WANT TO KNOW MORE</div>
-					<h2 class="hero-title">READ THE CLOUDY'S DIGEST</h2>
-					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and ready for the
-					day</p>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-    
-		<div class="row my-5">
-			<div class="blog-card">
-				<!-- Image -->
-				<div class="blog-image">
-					<img src="assets/img/blog-1.jpg" alt="Blog image">
-				</div>
-				<!-- Content -->
-				<div class="blog-content">
-					<!-- Category -->
-					<span class="blog-tag">Mattresses</span>
-					<!-- Title -->
-					<h3 class="blog-title">
-						Is a Firm Mattress Better for Your Back?
-						What an Expert Says
-					</h3>
-					<!-- Excerpt -->
-					<p class="blog-excerpt">
-						Back pain got you wondering if a firm mattress is the answer?
-						Our ergonomist breaks down the facts and helps you choose
-						what's best for your spine.
-					</p>
-					<!-- Meta -->
-					<div class="blog-meta">
-						<div class="blog-author-icon">
-							<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-								<path fill="#000"
-								d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
-							</svg>
-						</div>
-						<div class="blog-meta-text">
-							<div class="blog-author">Cloudy Editorial Team</div>
-							<div class="blog-date">August 2025</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blog-card">
-				<!-- Image -->
-				<div class="blog-image">
-					<img src="assets/img/blog-2.jpg" alt="Blog image">
-				</div>
-				<!-- Content -->
-				<div class="blog-content">
-					<!-- Category -->
-					<span class="blog-tag">Mattresses</span>
-					<!-- Title -->
-					<h3 class="blog-title">
-						Is a Firm Mattress Better for Your Back?
-						What an Expert Says
-					</h3>
-					<!-- Excerpt -->
-					<p class="blog-excerpt">
-						Back pain got you wondering if a firm mattress is the answer?
-						Our ergonomist breaks down the facts and helps you choose
-						what's best for your spine.
-					</p>
-					<!-- Meta -->
-					<div class="blog-meta">
-						<div class="blog-author-icon">
-							<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-								<path fill="#000"
-								d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
-							</svg>
-						</div>
-						<div class="blog-meta-text">
-							<div class="blog-author">Cloudy Editorial Team</div>
-							<div class="blog-date">August 2025</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blog-card">
-				<!-- Image -->
-				<div class="blog-image">
-					<img src="assets/img/blog-3.jpg" alt="Blog image">
-				</div>
-				<!-- Content -->
-				<div class="blog-content">
-					<!-- Category -->
-					<span class="blog-tag">Mattresses</span>
-					<!-- Title -->
-					<h3 class="blog-title">
-						Is a Firm Mattress Better for Your Back?
-						What an Expert Says
-					</h3>
-					<!-- Excerpt -->
-					<p class="blog-excerpt">
-						Back pain got you wondering if a firm mattress is the answer?
-						Our ergonomist breaks down the facts and helps you choose
-						what's best for your spine.
-					</p>
-					<!-- Meta -->
-					<div class="blog-meta">
-						<div class="blog-author-icon">
-							<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-								<path fill="#000"
-								d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" />
-							</svg>
-						</div>
-						<div class="blog-meta-text">
-							<div class="blog-author">Cloudy Editorial Team</div>
-							<div class="blog-date">August 2025</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- container end -->
-</section>
-<!-- Newsletter CTA Section (paste into page where needed) -->
-<section class="nl-section" aria-labelledby="nl-heading">
-	<div class="nl-inner">
-		<!-- LEFT: heading content -->
-		<div class="nl-left">
-			<div class="nl-eyebrow">SIGN-UP TO OUR</div>
-			<h2 id="nl-heading" class="nl-title">
-				<span class="nl-line">NEWSLETTER</span><br>
-				<span class="nl-line">AND SAVE <span class="nl-strong">10%</span> ON</span>
-			</h2>
-			<p class="nl-sub">Your first purchase</p>
-		</div>
-		<!-- RIGHT: input + button -->
-		<div class="nl-right">
-			<form class="nl-form" action="#" method="post" novalidate>
-				<label for="nl-email" class="sr-only">Email address</label>
-				<input id="nl-email" class="nl-input" type="email" name="email" placeholder="Enter your email" required>
-				<div class="nl-actions">
-					<button type="submit" class="nl-btn">Subscribe</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</section>
-<!-- Footer Section -->
-<footer class="footer-bg py-5">
-	<div class="container">
-		<div class="row g-4 align-items-start">
-			<!-- LEFT COLUMN -->
-			<div class="col-lg-4">
-				<img src="assets/img/footer-logo.png" class="footer-logo mb-3" alt="Cloudy Mattress">
-				<h3 class="footer-head mb-3">
-					We Continue to Set the Standard<br>
-					for Restful Nights.
-				</h3>
-				<p class="footer-desc mb-4">
-					Cloudy Mattress was founded on the revolutionary idea of delivering comfort and quality.
-					Our goal is simple: to provide the best customer service with the fastest shipping possible.
-					Our team is here to assist you with any questions; we have some experts you can ask to help
-					you find the right bed for you. You can reach us by email, phone, or live chat.
-				</p>
-				<a href="tel:8005409851" class="footer-cta-btn d-inline-flex align-items-center mb-2">
-					<svg width="22" height="22" fill="#fff" class="me-2" viewBox="0 0 24 24">
-						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 
+						<a href="tel:8005409851" class="footer-cta-btn d-inline-flex align-items-center mb-2">
+							<svg width="22" height="22" fill="#fff" class="me-2" viewBox="0 0 24 24">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 
 						19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.11 
 						2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12 1.01.38 2 
 						.76 2.94a2 2 0 0 1-.45 2.11L8.09 10.91a16 
 						16 0 0 0 6 6l1.14-1.35a2 2 0 0 1 
 						2.11-.45c.94.38 1.93.64 2.94.76A2 2 0 0 1 22 16.92z" />
-					</svg>
-					Give us a call
-				</a>
-				<p class="footer-small">(Mon–Fri 10am – 5pm CT)</p>
-				<p class="footer-address mt-3">
-					Address – 6075 Old Canton Rd, Jackson MS 39211<br>
-					Phone Number – 800-540-9851
-				</p>
-			</div>
-			<!-- POPULAR BRANDS -->
-			<div class="col-lg-4">
-				<h4 class="footer-title text-start mb-3">Popular brands</h4>
-				<div class="row">
-					<div class="col-12">
+							</svg>
+							Give us a call
+						</a>
+						<p class="footer-small">(Mon–Fri 10am – 5pm CT)</p>
+						<p class="footer-address mt-3">
+							Address – 6075 Old Canton Rd, Jackson MS 39211<br>
+							Phone Number – 800-540-9851
+						</p>
+					</div>
+					<!-- POPULAR BRANDS -->
+					<div class="col-lg-4">
+						<h4 class="footer-title text-start mb-3">Popular brands</h4>
+						<div class="row">
+							<div class="col-12">
+								<nav class="footer-menu">
+									<a href="#">Ashley</a>
+									<a href="#">Dream Cloud</a>
+									<a href="#">Ghostbed</a>
+									<a href="#">Diamond</a>
+									<a href="#">Corsicana</a>
+									<a href="#">Sleeptone</a>
+									<a href="#">American Star</a>
+									<a href="#">Malouf</a>
+									<a href="#">Bedgear</a>
+									<a href="#">Blu Sleep</a>
+									<a href="#">Hiend</a>
+									<a href="#">Bundle Of Dream</a>
+									<a href="#">72 Hours Sale</a>
+									<a href="#">Closeout</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<!-- INFORMATION + COMPANY -->
+					<div class="col-lg-4">
+						<h4 class="footer-title mb-3">Information</h4>
+						<nav class="footer-menu mb-4">
+							<a href="#">Search</a>
+							<a href="#">Contact Us</a>
+							<a href="#">Blogs</a>
+							<a href="#">FAQ's</a>
+							<a href="#">Shipping and Delivery</a>
+							<a href="#">Return Policy</a>
+							<a href="#">120 Days Sleep Trial</a>
+						</nav>
+						<h4 class="footer-title mt-4 mb-3">Company</h4>
 						<nav class="footer-menu">
-							<a href="#">Ashley</a>
-							<a href="#">Dream Cloud</a>
-							<a href="#">Ghostbed</a>
-							<a href="#">Diamond</a>
-							<a href="#">Corsicana</a>
-							<a href="#">Sleeptone</a>
-							<a href="#">American Star</a>
-							<a href="#">Malouf</a>
-							<a href="#">Bedgear</a>
-							<a href="#">Blu Sleep</a>
-							<a href="#">Hiend</a>
-							<a href="#">Bundle Of Dream</a>
-							<a href="#">72 Hours Sale</a>
-							<a href="#">Closeout</a>
+							<a href="#">About us</a>
+							<a href="#">Financing</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms of service</a>
+							<a href="#">Warranty</a>
 						</nav>
 					</div>
 				</div>
 			</div>
-			<!-- INFORMATION + COMPANY -->
-			<div class="col-lg-4">
-				<h4 class="footer-title mb-3">Information</h4>
-				<nav class="footer-menu mb-4">
-					<a href="#">Search</a>
-					<a href="#">Contact Us</a>
-					<a href="#">Blogs</a>
-					<a href="#">FAQ's</a>
-					<a href="#">Shipping and Delivery</a>
-					<a href="#">Return Policy</a>
-					<a href="#">120 Days Sleep Trial</a>
-				</nav>
-				<h4 class="footer-title mt-4 mb-3">Company</h4>
-				<nav class="footer-menu">
-					<a href="#">About us</a>
-					<a href="#">Financing</a>
-					<a href="#">Privacy Policy</a>
-					<a href="#">Terms of service</a>
-					<a href="#">Warranty</a>
-				</nav>
-			</div>
-		</div>
-	</div>
-</footer>
-</main>
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		</footer>
+	</main>
+	<!-- Bootstrap JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Custom JS -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/navbar.js"></script>
-<script src="assets/js/hero.js"></script>
-
-
-  
+	<!-- Custom JS -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/navbar.js"></script>
+	<script src="assets/js/hero.js"></script>
 
 </body>
+
 </html>

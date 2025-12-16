@@ -72,4 +72,7 @@
     flex-direction: row;
     align-items: center;
   }
+  .ps-section-controls{
+    flex-direction: column;
+  }
 }

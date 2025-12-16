@@ -196,9 +196,16 @@
   }
   
   @media (max-width: 760px) {
+    .hero-content {
+      padding-right: 0px;
+      text-align: center;
+  }
     .features {
-      flex-direction: column;
       gap: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
     }
     .feature:not(:last-child)::after {
       display: none;

@@ -8,12 +8,11 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  border-left: 8px solid #fff; /* white gutter */
-  border-top: 8px solid #fff;
   box-sizing: border-box;
   min-height: 320px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.06);
   overflow: visible;
+  --bs-card-border-color: none !important;
 }
 
 /* Remove border for the first grid item if needed */
@@ -300,4 +299,10 @@
   text-decoration: none;
   padding: 10px 0;
   font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+  .plush-card{
+    width:100%
+  }
 }

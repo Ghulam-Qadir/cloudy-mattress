@@ -1,6 +1,6 @@
 
 .blog-card {
-    max-width: 360px;
+    max-width: 33%;
     background: #fff;
     border-radius: 6px;
     overflow: hidden;
@@ -75,3 +75,9 @@
     color: #666;
   }
   
+  @media screen and (max-width:768px) {
+    .blog-card {
+      max-width: 100%;
+    }
+    
+  }
