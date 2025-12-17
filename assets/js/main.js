@@ -11,16 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
-
-  
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".mySwiper").forEach((swiperEl) => {
+  let parentEl = swiperEl.closest('section');
       new Swiper(swiperEl, {
         loop: true,
         spaceBetween: 20,
@@ -39,18 +32,44 @@ document.addEventListener("DOMContentLoaded", function () {
           1200: { slidesPerView: 3 },
         },
   
-        pagination: {
-          el: swiperEl.querySelector(".ps-arrows"),
-          clickable: true,
-        },
+        // pagination: {
+        //   el: parentEl.querySelector(".ps-arrows"),
+        //   clickable: true,
+        // },
   
         navigation: {
-          nextEl: swiperEl.querySelector(".arrow.next"),
-          prevEl: swiperEl.querySelector(".arrow.prev"),
+          nextEl: parentEl.querySelector(".arrow.next"),
+          prevEl: parentEl.querySelector(".arrow.prev"),
         },
       });
     });
   });
+  
+
+  // let bestSellerSwiper;
+
+  // document.addEventListener('DOMContentLoaded', function () {
+  
+  //   // Prevent double initialization
+  //   if (document.querySelector('.mySwipergroup.swiper-initialized')) {
+  //     return;
+  //   }
+  
+  //   bestSellerSwiper = new Swiper('.mySwipergroup', {
+  //     slidesPerView: 1,
+  //     spaceBetween: 0,
+  //     speed: 600,
+  //     loop: false,
+  
+  //     navigation: {
+  //       nextEl: '.ps-arrows .next',
+  //       prevEl: '.ps-arrows .prev',
+  //     },
+  
+  //     watchOverflow: true,
+  //   });
+  
+  // });
   
 
 

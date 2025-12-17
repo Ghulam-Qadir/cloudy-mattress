@@ -24,14 +24,21 @@
 
 /* ---------------- LEFT SIDE ---------------- */
 .sleep-heading {
-  font-size: 42px;
-  font-weight: 300;
-  line-height: 1.2;
-}
+  font-family: var(--cta-font);
 
+}
+.sleep-heading span{
+  font-size: 80px;
+  padding: 0px;
+  margin: 8px 0px;
+  height: 62px;
+  display: block;
+}
 .sleep-bold {
-  font-size: 58px;
-  font-weight: 700;
+  font-size: 138px;
+  line-height: 3.5rem;
+  font-weight: 500;
+
 }
 
 .sleep-desc {
