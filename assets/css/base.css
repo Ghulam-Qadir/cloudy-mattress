@@ -18,8 +18,8 @@
 
   @font-face {
     font-family: "Salitia";
-    src: url("../fonts/Salitia-4.woff2") format("woff2"),
-    url("../fonts/Salitia-4.ttf") format("truetype");
+    src: url("../fonts/Salitia.woff2") format("woff2"),
+    url("../fonts/Salitia.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;

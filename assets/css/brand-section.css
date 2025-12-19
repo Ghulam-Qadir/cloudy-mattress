@@ -251,6 +251,9 @@
    ============================ */
 
 @media (max-width: 900px) {
+  .brand-header{
+    flex-wrap: wrap;
+  }
   .brand-hero-top {
     flex-direction: column;
     align-items: flex-start;
