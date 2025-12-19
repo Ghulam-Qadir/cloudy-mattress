@@ -106,6 +106,9 @@
    ============================ */
 
 @media (max-width: 768px) {
+  main{
+    overflow: hidden;
+  }
 
   .ps-hero {
     gap: 14px;
@@ -115,6 +118,7 @@
   .ps-hero-left {
     gap: 14px;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .ps-hero-badges .logo-slices {
@@ -143,6 +147,9 @@
   .bs-arrows {
     justify-content: flex-start;
     margin-top: 8px;
+  }
+  .ps-arrows{
+    margin:15px;
   }
 
   .arrow {

@@ -142,6 +142,7 @@
   width: 100%;
   object-fit: cover;
   display: block;
+  height:400px;
 }
 
 /* OVERLAY CONTENT */
@@ -151,7 +152,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px 125px;
   box-sizing: border-box;
 }
 
@@ -175,6 +176,7 @@
 }
 
 .discount-text .off {
+  font-family: 'sneakers-script';
   font-size: 52px;
   font-weight: 700;
   margin-left: 6px;
@@ -185,6 +187,57 @@
   margin-top: 6px;
   font-size: 20px;
   font-weight: 500;
+}
+
+/* financing TEXT */
+.financing-text {
+  color: #9ce3ff;
+  max-width: 360px;
+  font-weight: 100;
+}
+.financing-text .desc{
+  display: block;
+    color: #fff;
+    font-size: 22px;
+    max-width: 625px;
+    width: 450px;
+    font-weight: 100;
+}
+
+.financing-text .get {
+  display: block;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.financing-text .percent {
+  font-size: 92px;
+  font-weight: 900;
+  color: #9ce3ff;
+  line-height: 0.9;
+}
+
+.financing-text .off {
+  font-family: 'sneakers-script';
+  font-size: 52px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.financing-text .sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.financing-text .sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #9ce3ff;
+  padding: 16px 40px;
+  border-radius:50px;
 }
 
 /* BRAND LOGO */
@@ -207,10 +260,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding: 61px 15px;
+  }
+  .financing-text .desc{
+    width:320px;
   }
 
   .brand-hero-banner img {
-    height: 340px;
+    height: 370px;
   }
 }
 

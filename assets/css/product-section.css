@@ -75,5 +75,6 @@
   }
   .ps-section-controls{
     flex-direction: column;
+    width: 334px;
   }
 }

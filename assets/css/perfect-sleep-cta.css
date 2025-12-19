@@ -27,18 +27,25 @@
   font-family: var(--cta-font);
 
 }
-.sleep-heading span{
-  font-size: 80px;
-  padding: 0px;
-  margin: 8px 0px;
-  height: 62px;
-  display: block;
-}
-.sleep-bold {
-  font-size: 138px;
-  line-height: 3.5rem;
-  font-weight: 500;
 
+.sleep-bold {
+  font-weight: 400;
+  line-height: 63px;
+}
+
+.sleep-bold .main-statment{
+  font-size: 138px;
+ 
+}
+.sleep-bold .top-title{
+  font-size: 80px;
+  display: block;
+  font-weight: 300;
+}
+.sleep-bold .bottom-title{
+  font-size: 80px;
+  display: block;
+  margin-top: -25px;
 }
 
 .sleep-desc {
@@ -76,7 +83,9 @@
 }
 
 .sleep-btn:hover {
-  background: #c60000;
+  background: transparent;
+  color:#fff;
+  border:1px solid #fff;
 }
 
 /* ---------------- RIGHT SIDE ---------------- */
@@ -102,7 +111,12 @@
    MOBILE RESPONSIVE FIXES
    ============================================================ */
 @media (max-width: 768px) {
-
+  .ps-section-title{
+    flex-direction: column;
+  }
+  .sleep-section{
+    padding:15px;
+  }
   .sleep-container {
     grid-template-columns: 1fr;
     padding: 20px;
@@ -122,6 +136,18 @@
     font-size: 46px;
   }
 
+  .sleep-bold .main-statment{
+    font-size:72px;
+  }
+  .sleep-bold .top-title{
+    font-size:46px;
+    margin-bottom: -28px;
+  }
+  .sleep-bold .bottom-title{
+    font-size:46px;
+  }
+
+
   .sleep-desc,
   .sleep-small {
     margin-left: auto;
@@ -129,9 +155,9 @@
   }
 
   .sleep-img {
-    max-width: 90%;
-    right: 0 !important;
-    top: 0;
+    max-width: 134%;
+    right: 50px !important;
+    top: 74px;
     position: relative;
     margin: 0 auto;
   }
@@ -146,7 +172,10 @@
   .sleep-btn {
     width: 100%;              /* full-width button on small screens */
     padding: 14px 20px;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 16px;
+  }
+  .sleep-btn .arrow{
+    font-size:22px;
   }
 }
