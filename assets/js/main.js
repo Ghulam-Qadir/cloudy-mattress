@@ -7,11 +7,11 @@
    document.addEventListener('DOMContentLoaded', function() {
     // Global JavaScript code can go here.
     console.log('Cloudy Mattress site initialized.');
-  });
 
 
 
-   document.addEventListener("DOMContentLoaded", function () {
+
+
     document.querySelectorAll(".mySwiper").forEach((swiperEl) => {
       let parentEl = swiperEl.closest('section');
       new Swiper(swiperEl, {
@@ -32,10 +32,6 @@
           1200: { slidesPerView: 3 },
         },
         
-        // pagination: {
-        //   el: parentEl.querySelector(".ps-arrows"),
-        //   clickable: true,
-        // },
         
         navigation: {
           nextEl: parentEl.querySelector(".arrow.next"),
@@ -43,7 +39,7 @@
         },
       });
     });
-  });
+
    
 
    new Swiper(".mySwipergroup", {
@@ -67,7 +63,48 @@
       clickable: true,
     },
   });
-   
 
+
+
+  
+  const pills = document.querySelectorAll('.ps-pills .pill');
+  const swiperEl = document.querySelector('.mySwiper');
+  const swiper = swiperEl.swiper;
+  
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+  
+      // ---- Active pill ----
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+  
+      const category = pill.dataset.category;
+  
+      // ---- Filter slides (DO NOT REMOVE) ----
+      swiper.slides.forEach(slide => {
+        const slideCategory = slide.dataset.category;
+  
+        const shouldShow =
+          category === 'all' || slideCategory === category;
+  
+        slide.style.display = shouldShow ? '' : 'none';
+      });
+  
+      // ---- Refresh Swiper layout ----
+      swiper.update();
+    });
+  });
+  
+  
+  
+  
+  
+ 
+
+
+
+  
+   
+});
 
 

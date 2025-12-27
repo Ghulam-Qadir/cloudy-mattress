@@ -8,7 +8,13 @@
   position: relative;
   overflow: visible;
 }
-
+.sleep-wrap{
+  max-width: 1200px;
+  min-height: 800px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: -67px;
+}
 /* Container with background */
 .sleep-container {
   background: #F7E5C8;
@@ -19,7 +25,7 @@
   align-items: center;
   position: relative;
   overflow: visible;
-  padding: 20px 0px 20px 40px;
+  padding: 67px 0px 67px 40px;
 }
 
 /* ---------------- LEFT SIDE ---------------- */
@@ -34,7 +40,7 @@
 }
 
 .sleep-bold .main-statment{
-  font-size: 138px;
+  font-size: 122px;
  
 }
 .sleep-bold .top-title{
@@ -101,9 +107,9 @@
 .sleep-img {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width:736px;
   height: auto;
-  right: -50px;
+  right: -63px;
   top: 0px;
 }
 

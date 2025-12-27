@@ -36,19 +36,11 @@
 
 <body>
 	<header class="position-absolute w-100">
-		<div class="top-nav container d-flex justify-content-end py-2">
-			<div class="navbar-icons d-flex align-items-center">
-				<a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
-				<a href="#" class="nav-icon"><i class="bi bi-person"></i></a>
-				<a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
-				<a href="#" class="nav-icon cart-icon">
-					<i class="bi bi-bag"></i>
-					<span class="cart-notification"></span>
-				</a>
-			</div>
-		</div>
+		<!-- <div class="top-nav container d-flex justify-content-end py-2 px-4">
+		
+		</div> -->
 		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="container">
+			<div class="container align-items-end">
 				<a class="navbar-brand d-flex align-items-center" href="#">
 					<img src="assets/img/logo.png" class="navbar-logo-img">
 				</a>
@@ -56,8 +48,17 @@
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav mx-auto">
+			<div class="collapse navbar-collapse justify-content-end align-items-end flex-column" id="navbarNav">
+				<div class="navbar-icons d-flex align-items-center px-3">
+					<a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+					<a href="#" class="nav-icon"><i class="bi bi-person"></i></a>
+					<a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
+					<a href="#" class="nav-icon cart-icon">
+						<i class="bi bi-bag"></i>
+						<span class="cart-notification"></span>
+					</a>
+				</div>
+				<ul class="navbar-nav">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="mattressDropdown" role="button"
 						data-bs-toggle="dropdown" aria-expanded="false">
@@ -141,16 +142,16 @@
 	<section class="hero-section">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-lg-6 hero-content">
+				<div class="col-lg-5 hero-content">
 					<h1 class="hero-title">
 						<span class="title-script">Sleep Like</span>
 						<span class="title-sans">You're on a Cloud</span>
 					</h1>
 					<p class="hero-description">
 						Experience comfort backed by science and loved by
-						<strong>70,000+ customers</strong>.
+						<strong>70,000+ </strong> customers.
 					</p>
-					<div class="hero-features d-flex justify-content-start">
+					<div class="hero-features d-flex justify-content-between">
 						<div class="feature-card">
 							<div class="feature-icon">
 								<img src="assets/img/shipping-icon.svg" alt="Free Shipping">
@@ -179,14 +180,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="hero-actions">
+					<div class="hero-actions text-center">
 						<a href="#" class="btn btn-primary btn-quiz">
 							Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
 						</a>
 						<p class="quiz-subtext">Discover your perfect mattress in just 2 minutes.</p>
 					</div>
 				</div>
-				<div class="col-lg-6 hero-media">
+				<div class="col-lg-7 hero-media">
 					<!-- Placeholder for hero image composition -->
 					<img src="assets/img/hero-image.png" alt="Woman sleeping on a cloudy mattress"
 					class="img-fluid">
@@ -260,12 +261,18 @@
 				</div>
 			</div>
 			<!-- cards row -->
-			<div class="swiper mySwiper">
+			<div class="swiper mySwiper ">
 				<div class="swiper-wrapper">
 					<!-- card -->
-					<div class="product-item swiper-slide" data-price="2099" data-category="hybrid"
-					data-size="queen" data-brand="dream-cloud" data-original-price="2999"
-					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
+					<div class="product-item swiper-slide"
+					
+					data-price="2099" 
+					data-category="hybrid"
+					data-size="queen" 
+					data-brand="dream-cloud" 
+					data-original-price="2999"
+					data-sizes='["twin", "twin-xl", "full", "queen", "king"]'
+					>
 					<img src="assets/img/productimage.jpg" alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress">
 					<div class="product-details">
 						<h5>DreamCloud Hybrid Luxe 4.0 Queen Mattress</h5>
@@ -443,6 +450,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 </section>
 <!-- SLEEP SECTION -->
 <section class="sleep-section">
+<div class="sleep-wrap">
 	<div class="sleep-container">
 		<!-- LEFT CONTENT -->
 		<div class="sleep-left">
@@ -462,11 +470,10 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 				Whether you struggle with back pain, joint discomfort, or just can’t find the right
 				balance between support and comfort, we’ve got you covered!
 			</p>
-		<div class="hero-actions" bis_skin_checked="1">
+		<div class="actions text-center" bis_skin_checked="1">
 						<a href="#" class="btn btn-primary btn-quiz">
 							Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
 						</a>
-						<p class="quiz-subtext">Discover your perfect mattress in just 2 minutes.</p>
 					</div>
 			<p class="sleep-small">
 				Take our quick 2-minute quiz to discover the mattress that’s designed for your
@@ -478,6 +485,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 			<img src="assets/img/sleeping-girl.png" alt="sleeping person" class="sleep-img">
 		</div>
 	</div>
+</div>
 </section>
 <!-- BEST SELLERS SECTION (section only) -->
 <section class="bs-section">
@@ -718,16 +726,18 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 <section class="brand-section">
 	<div class="brand-wrap">
 		<!-- HEADER -->
-		<div class="brand-header">
-			<div class="ps-hero-badges">
-				<img src="assets/img/improve-sleep (1).png" alt="slices">
-			</div>
-			<div>
-				<div class="eyebrow">SHOP BY BRAND</div>
-				<h2 class="brand-title">DISCOVER TOP NAMES YOU TRUST</h2>
-				<p class="brand-sub">Designed to bring you quality, comfort, and lasting value, choose from the
-					best in the
-				business.</p>
+		<div class="ps-hero" bis_skin_checked="1">
+			<div class="ps-hero-left" bis_skin_checked="1">
+				<div class="ps-hero-badges" bis_skin_checked="1">
+					<img src="assets/img/improve-sleep (1).png" alt="">
+				</div>
+				<div bis_skin_checked="1">
+					<div class="eyebrow" bis_skin_checked="1"> SHOP BY BRAND</div>
+					<h2 class="hero-title">DISCOVER TOP NAMES YOU TRUST</h2>
+					<p class="hero-sub">Designed to bring you quality, comfort, and lasting value, choose from the
+						best in the
+					business.</p>
+				</div>
 			</div>
 		</div>
 		<!-- LOGO SLIDER (INFINITE) -->
@@ -1186,7 +1196,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 </div>
 </div>
 </section>
-<section>
+<section class="mattress-by-technology">
 	<div class="container">
 		<!-- header / hero title -->
 		<div class="ps-hero" bis_skin_checked="1">
@@ -1376,7 +1386,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 		</div>
 	</div>
 </section>
-<section class="mt-4">
+<section class="mt-4 buy-more">
 	<div class="container">
 		<!-- header / hero title -->
 		<div class="ps-hero" bis_skin_checked="1">
@@ -1385,7 +1395,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 					<img src="assets/img/improve-sleep (1).png" alt="">
 				</div>
 				<div bis_skin_checked="1">
-					<div class="eyebrow" bis_skin_checked="1">BUY MORE</div>
+					<div class="eyebrow" bis_skin_checked="1"> BUY MORE</div>
 					<h2 class="hero-title">SAVE MORE</h2>
 					<p class="hero-sub">Designed for deep comfort and better rest, So you wake up refreshed and
 						ready for the
@@ -1443,7 +1453,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 	</div>
 </section>
 <!-- QA Section -->
-<section>
+<section class="qa-section">
 	<div class="container">
 		<!-- header / hero title -->
 		<div class="ps-hero" bis_skin_checked="1">
@@ -1638,7 +1648,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 </div>
 </section>
 <!-- blog post section -->
-<section>
+<section class="blog-post-section">
 	<div class="container">
 
 
@@ -1774,7 +1784,7 @@ data-sizes='["twin", "twin-xl", "full", "queen", "king"]'>
 	<!-- container end -->
 </section>
 <!-- Newsletter CTA Section (paste into page where needed) -->
-<section class="nl-section" aria-labelledby="nl-heading">
+<section class="cta-section" aria-labelledby="nl-heading">
 	<div class="nl-inner">
 		<!-- LEFT: heading content -->
 		<div class="nl-left">
