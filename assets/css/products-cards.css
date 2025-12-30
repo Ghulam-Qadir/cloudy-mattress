@@ -117,6 +117,7 @@
 
 .product-item img {
   max-width: 100%;
+  min-height: 379px;
   height: auto;
   display: block;
   border-top-left-radius: 8px;

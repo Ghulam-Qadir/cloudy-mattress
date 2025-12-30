@@ -83,6 +83,15 @@
   color: #fff;
 }
 
+.tab-panel {
+  display: none;
+}
+.tab-panel.active {
+  display: block;
+}
+
+
+
 /* --- arrows --- */
 .bs-arrows {
   display: flex;
