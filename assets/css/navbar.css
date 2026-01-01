@@ -65,8 +65,8 @@ header {
 
 .cart-icon .cart-notification {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: 18px;
+    right: 12px;
     width: 10px;
     height: 10px;
     background-color: var(--accent-color);

@@ -1,65 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-  console.log("Cloudy Mattress initialized");
-
-  /* =========================
-     TABS (data attributes)
-     ========================= */
-  const tabButtons = document.querySelectorAll(".tabs-nav [data-tab-btn]");
-  const tabPanels  = document.querySelectorAll(".tabs-content .tab-panel");
-
-  tabButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-      const key = this.dataset.tabBtn;
-
-      // pills
-      tabButtons.forEach(b => b.classList.remove("active"));
-      this.classList.add("active");
-
-      // panels
-      tabPanels.forEach(panel => {
-        panel.classList.toggle("active", panel.dataset.tabPanel === key);
-      });
-
-      // 🔥 FIX hidden-tab swiper sizing
-      const activePanel = document.querySelector(
-        `.tab-panel[data-tab-panel="${key}"]`
-      );
-
-      activePanel?.querySelectorAll(".swiper").forEach(sw => {
-        if (!sw.swiper) return;
-
-        requestAnimationFrame(() => {
-          sw.swiper.updateSize();
-          sw.swiper.updateSlides();
-          sw.swiper.update();
-        });
-      });
-    });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Auto Tabs + Swipers initialized");
 
   /* =========================
-     PRODUCT SWIPERS
+     INIT ALL SWIPERS (GLOBAL)
      ========================= */
-  document.querySelectorAll(".mySwiper").forEach(swiperEl => {
-
+  document.querySelectorAll(".swiper").forEach(swiperEl => {
     if (swiperEl.classList.contains("swiper-initialized")) return;
 
-    const panelEl = swiperEl.closest(".tab-panel");
-    if (!panelEl) return;
-
     const slidesCount = swiperEl.querySelectorAll(".swiper-slide").length;
-    const MAX_SLIDES_PER_VIEW = 3;
-    const canLoop = slidesCount > MAX_SLIDES_PER_VIEW;
+    const isGroup = swiperEl.classList.contains("mySwipergroup");
 
-    const prevBtn = panelEl.querySelector(".arrow.prev");
-    const nextBtn = panelEl.querySelector(".arrow.next");
+    const canLoop = isGroup
+      ? slidesCount > 1
+      : slidesCount > 3;
+
+    const scope = swiperEl.closest(".tab-panel") || swiperEl.closest("section") || document;
+    const prevBtn = scope.querySelector(".arrow.prev");
+    const nextBtn = scope.querySelector(".arrow.next");
 
     new Swiper(swiperEl, {
       observer: true,
       observeParents: true,
 
-      spaceBetween: 20,
+      slidesPerView: isGroup ? 1 : 3,
+      spaceBetween: isGroup ? 40 : 20,
       speed: 800,
       loop: canLoop,
 
@@ -69,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         pauseOnMouseEnter: true,
       } : false,
 
-      breakpoints: {
+      breakpoints: isGroup ? undefined : {
         0:    { slidesPerView: 1 },
         576:  { slidesPerView: 2 },
-        992:  { slidesPerView: MAX_SLIDES_PER_VIEW },
-        1200: { slidesPerView: MAX_SLIDES_PER_VIEW },
+        992:  { slidesPerView: 3 },
+        1200: { slidesPerView: 3 },
       },
 
       navigation: {
@@ -81,57 +45,46 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: nextBtn,
       },
     });
-
-    if (!canLoop) {
-      prevBtn?.setAttribute("disabled", true);
-      nextBtn?.setAttribute("disabled", true);
-    }
   });
 
   /* =========================
-     GROUP SWIPERS (INSIDE TABS)
+     TABS (OPTIONAL)
      ========================= */
-  document.querySelectorAll(".mySwipergroup").forEach(groupSwiper => {
+  document.querySelectorAll(".tabs-nav").forEach(tabsNav => {
+    const section = tabsNav.closest("section");
+    if (!section) return;
 
-    if (groupSwiper.classList.contains("swiper-initialized")) return;
+    const tabButtons = tabsNav.querySelectorAll("[data-tab-btn]");
+    const tabPanels  = section.querySelectorAll(".tabs-content .tab-panel");
 
-    const panelEl =
-      groupSwiper.closest(".tab-panel") ||
-      groupSwiper.closest("section");
+    if (!tabButtons.length || !tabPanels.length) return;
 
-    if (!panelEl) return;
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.tabBtn;
 
-    const slidesCount = groupSwiper.querySelectorAll(".swiper-slide").length;
-    const MAX_SLIDES_PER_VIEW = 1;
-    const canLoop = slidesCount > MAX_SLIDES_PER_VIEW;
+        tabButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
 
-    const prevBtn = panelEl.querySelector(".arrow.prev");
-    const nextBtn = panelEl.querySelector(".arrow.next");
+        tabPanels.forEach(panel => {
+          panel.classList.toggle("active", panel.dataset.tabPanel === key);
+        });
 
-    new Swiper(groupSwiper, {
-      observer: true,
-      observeParents: true,
+        // Update Swipers in active tab
+        const activePanel = section.querySelector(
+          `.tab-panel[data-tab-panel="${key}"]`
+        );
 
-      slidesPerView: 1,
-      spaceBetween: 40,
-      speed: 800,
-      loop: canLoop,
-
-      autoplay: canLoop ? {
-        delay: 3000,
-        disableOnInteraction: false,
-      } : false,
-
-      navigation: {
-        prevEl: prevBtn,
-        nextEl: nextBtn,
-      },
+        activePanel?.querySelectorAll(".swiper").forEach(sw => {
+          if (!sw.swiper) return;
+          requestAnimationFrame(() => {
+            sw.swiper.updateSize();
+            sw.swiper.updateSlides();
+            sw.swiper.update();
+          });
+        });
+      });
     });
-
-    if (!canLoop) {
-      prevBtn?.setAttribute("disabled", true);
-      nextBtn?.setAttribute("disabled", true);
-    }
   });
 
 });

@@ -70,4 +70,9 @@ a:hover {
     color: darken(var(--primary-color), 10%);
     text-decoration: none;
 }
-
+a.btn-white{
+  font-weight: 400;
+}
+a.btn-white:hover{
+  color:white !important;
+}

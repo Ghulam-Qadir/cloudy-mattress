@@ -140,9 +140,8 @@
 
 .brand-hero-banner img {
   width: 100%;
-  object-fit: cover;
+
   display: block;
-  height:400px;
 }
 
 /* OVERLAY CONTENT */
@@ -202,16 +201,17 @@
     max-width: 625px;
     width: 450px;
     font-weight: 100;
+    line-height: 27px;
 }
 
 .financing-text .get {
   display: block;
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 300;
 }
 
 .financing-text .percent {
-  font-size: 92px;
+  font-size: 70px;
   font-weight: 900;
   color: #9ce3ff;
   line-height: 0.9;

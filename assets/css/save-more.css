@@ -1,136 +1,158 @@
+/* =====================================
+   BUNDLE SECTION
+   ===================================== */
+
 .bundle-section {
-    background: #ffffff;
-    padding: 40px 0 60px;
-  }
-  
-  .bundle-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* Top row */
-  .bundle-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-  }
-  
-  .bundle-save {
-    color: #e00000;
-    font-size: 26px;
-    font-weight: 600;
-  }
-  
-  /* Navigation arrows */
-  .bundle-nav {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .nav-btn {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ccc;
-    background: #fff;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .nav-btn::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .nav-btn.prev::before {
-    transform: translate(-50%, -50%) rotate(-135deg);
-  }
-  
-  .nav-btn.next::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  /* Images */
-  .bundle-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-bottom: 28px;
-  }
-  
-  .bundle-img {
-    background: #eef2f5;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .bundle-img img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Price */
-  .bundle-price {
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 14px;
-  }
-  
-  /* Description */
+  background: #ffffff;
+  padding: 40px 0 60px;
+}
+
+.bundle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* =====================================
+   TOP ROW
+   ===================================== */
+
+.bundle-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.bundle-save {
+  color: #e00000;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* =====================================
+   NAVIGATION ARROWS
+   ===================================== */
+
+.bundle-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-btn::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.nav-btn.prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.nav-btn.next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* =====================================
+   SWIPER SLIDES (IMPORTANT FIX)
+   ===================================== */
+
+/* ❌ DO NOT use grid here — Swiper controls layout */
+.bundle-img {
+  background: #eef2f5;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bundle-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Ensure Swiper behaves correctly */
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+/* =====================================
+   PRICE & TEXT
+   ===================================== */
+
+.bundle-price {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.bundle-title {
+  font-size: 20px;
+  font-style: italic;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto 26px;
+  line-height: 1.4;
+}
+
+/* =====================================
+   BUTTON
+   ===================================== */
+
+.bundle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #e00000;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.bundle-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+.cart-icon {
+  font-size: 20px;
+}
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 991px) {
   .bundle-title {
-    font-size: 20px;
-    font-style: italic;
-    color: #333;
-    max-width: 900px;
-    margin: 0 auto 26px;
-    line-height: 1.4;
+    font-size: 18px;
   }
-  
-  /* Button */
-  .bundle-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #e00000;
-    color: #fff;
-    padding: 14px 40px;
-    border-radius: 40px;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
+
+  .bundle-price {
+    font-size: 28px;
   }
-  
-  .bundle-btn:hover {
-    opacity: 0.9;
-    color: #fff;
-  }
-  
-  .cart-icon {
-    font-size: 20px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 991px) {
-    .bundle-images {
-      grid-template-columns: 1fr;
-    }
-  
-    .bundle-title {
-      font-size: 18px;
-    }
-  
-    .bundle-price {
-      font-size: 28px;
-    }
-  }
-  
+}

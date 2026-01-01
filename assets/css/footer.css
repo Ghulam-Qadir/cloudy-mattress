@@ -165,7 +165,7 @@ background: #e8edf0;
     padding: 14px 40px;
     border-radius: 40px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -173,7 +173,9 @@ background: #e8edf0;
     opacity: .9;
     color: #fff;
 }
-
+.footer-contact-wrap{
+  text-align: center;
+}
 /* small text */
 .footer-small {
     font-size: 13px;
@@ -223,6 +225,60 @@ background: #e8edf0;
     background-repeat: no-repeat;
     background-size: 14px;
 }
+
+.footer-bar {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  white-space: nowrap;
+}
+
+.footer-center {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.footer-center .social {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-right img {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
 
 /* Responsive fixes */
 @media (max-width: 768px) {
