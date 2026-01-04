@@ -133,6 +133,9 @@
   }
 
   @media (max-width: 760px) {
+    .bs-section {
+      padding: 80px 0;
+    }
     .bs-main {
       grid-template-columns: 1fr;
     }
@@ -156,11 +159,11 @@
       grid-template-columns: 1fr;
       gap: 14px;
     }
+    /* IMAGE NORMALIZATION */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
-  /* IMAGE NORMALIZATION */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }

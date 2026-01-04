@@ -10,7 +10,7 @@
 ======================================== */
 
 .hero-section {
-    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
+    background: linear-gradient(180deg,var(--background-gradient-start) 0%, var(--background-gradient-end) 60%);
     padding: 12rem 0 4rem;
     overflow: hidden;
 }
@@ -194,6 +194,10 @@
   }
   
   @media (max-width: 760px) {
+    .hero-section {
+      background: linear-gradient(180deg,var(--background-gradient-start) 0%, var(--background-gradient-end) 80%);
+      padding: 12rem 15px 4rem;
+  }
     .hero-content {
       padding-right: 0px;
       text-align: center;
@@ -208,5 +212,6 @@
     .feature:not(:last-child)::after {
       display: none;
     }
+
   }
   

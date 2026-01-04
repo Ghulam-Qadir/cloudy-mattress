@@ -1,7 +1,10 @@
+/* ============================
+   BRAND SECTION
+   ============================ */
 
 /* SECTION WRAP */
 .brand-section {
-  padding: 40px 0;
+  padding: 0px;
   background: #fff;
 }
 .brand-wrap {
@@ -151,7 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 125px;
+  padding: 40px 191px;
   box-sizing: border-box;
 }
 
@@ -159,12 +162,14 @@
 .discount-text {
   color: #fff;
   max-width: 360px;
+  line-height: 1;
 }
 
 .discount-text .get {
   display: block;
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 75px;
+  font-weight: 400;
+  padding-left: 20px;
 }
 
 .discount-text .percent {
@@ -184,8 +189,9 @@
 .discount-text .sub {
   display: block;
   margin-top: 6px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 400;
+  padding-left: 20px;
 }
 
 /* financing TEXT */
@@ -280,5 +286,9 @@
   }
   .discount-text .off {
     font-size: 36px;
+  }
+  .brand-hero-banner img {
+    height: 370px;
+    object-fit: cover;
   }
 }

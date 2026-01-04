@@ -1,6 +1,13 @@
 
-/* Newsletter CTA — exact UI copy */
+/* Newsletter CTA
+and footer styles
 /* Section wrapper */
+
+.cta-section{
+    background: #e8edf0; /* exact pale grey/blue from screenshot */
+    padding: 80px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.04); /* subtle top line like image */
+}
 .nl-section {
 background: #e8edf0;
   padding: 36px 20px;
@@ -12,7 +19,7 @@ background: #e8edf0;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 24px;
   align-items: center;
   padding: 8px 20px;
@@ -24,9 +31,9 @@ background: #e8edf0;
 
 .nl-eyebrow {
   color: #d91a1a;         /* red eyebrow */
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.6px;
-  font-size: 14px;
+  font-size: 24px;
   margin-bottom: 6px;
 }
 
@@ -51,7 +58,7 @@ background: #e8edf0;
 .nl-sub {
   margin: 10px 0 0;
   color: #7c8084;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* RIGHT: form layout */
@@ -273,7 +280,7 @@ background: #e8edf0;
 /* Responsive */
 @media (max-width: 768px) {
   .footer-inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 14px;
     text-align: center;
   }
