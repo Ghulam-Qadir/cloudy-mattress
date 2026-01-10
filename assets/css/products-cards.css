@@ -145,6 +145,12 @@
 }
 .stars {
   color: #ffc107;
+  display: flex;
+}
+.stars  img.star{
+  width: 16px;
+  height: 16px ;
+  min-height: 16px;
 }
 
 /* Pricing */
@@ -169,6 +175,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
+
 }
 .size-options button {
   background-color: #e9ecef;
@@ -177,6 +184,10 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   cursor: pointer;
+  &:hover{
+    background-color:#000;
+    color:#e9ecef;
+  }
 }
 .size-options button.active {
   background-color: var(--text-color);
@@ -190,6 +201,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .shop-now {
   background-color: transparent;
   color: #d9534f;
@@ -199,25 +211,41 @@
   font-size: 0.9rem;
   font-weight: 600;
   position: relative;
+  overflow: hidden;
 }
+
+/* Base pseudo-elements */
 .shop-now::before,
 .shop-now::after {
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
-  border-style: solid;
-  border-color: #d9534f;
+  border: 2px solid #d9534f;
+  transition: all 0.35s ease;
 }
+
+/* Top-left corner */
 .shop-now::before {
   top: 0;
   left: 0;
-  border-width: 2px 0 0 2px;
+  border-right: none;
+  border-bottom: none;
 }
+
+/* Bottom-right corner */
 .shop-now::after {
   bottom: 0;
   right: 0;
-  border-width: 0 2px 2px 0;
+  border-left: none;
+  border-top: none;
+}
+
+/* Hover animation → full border */
+.shop-now:hover::before,
+.shop-now:hover::after {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -226,7 +254,7 @@
    ============================ */
 
 .plush-card {
-  width: 320px;
+  width: 100%;
   background: #fff;
   border: 1px solid #edf0f2;
   box-sizing: border-box;

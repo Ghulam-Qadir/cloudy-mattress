@@ -119,7 +119,10 @@ background: #e8edf0;
 }
 
 /* subtle hover */
-.nl-btn:hover { transform: translateY(-2px); background: #0a0a0a; }
+.nl-btn:hover { 
+  transform: translateY(0px); 
+  background: #0a0a0a; 
+}
 
 /* utility: screen-reader only */
 .sr-only {

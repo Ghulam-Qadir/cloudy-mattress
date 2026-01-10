@@ -74,6 +74,9 @@
     flex-direction: row;
     align-items: center;
   }
+  .ps-hero-badges img{
+    display: none;
+  }
   .ps-section-controls{
     flex-direction: column;
     width: 100%;

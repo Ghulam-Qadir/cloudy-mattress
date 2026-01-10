@@ -1,12 +1,13 @@
 /* ============================
-   BRAND SECTION
+   BRAND SECTION – FINAL
    ============================ */
 
 /* SECTION WRAP */
 .brand-section {
-  padding: 0px;
+  padding: 0;
   background: #fff;
 }
+
 .brand-wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -49,13 +50,14 @@
   max-width: 480px;
 }
 
-/* LOGO SLIDER */
+/* SLIDER */
 .brand-slider {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
+/* TRACK */
 .brand-track {
   display: flex;
   gap: 22px;
@@ -63,6 +65,12 @@
   animation: slideInfinite 22s linear infinite;
 }
 
+/* ✅ STOP SLIDER ON HOVER */
+.brand-slider:hover .brand-track {
+  animation-play-state: paused;
+}
+
+/* ITEM */
 .brand-item {
   flex: 0 0 auto;
   width: 220px;
@@ -73,19 +81,38 @@
   justify-content: center;
   align-items: center;
   background: #f7f9fb;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
+/* LOGO IMAGE – GRAY BY DEFAULT */
 .brand-item img {
   max-width: 70%;
   max-height: 60%;
   object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
-/* INFINITE SCROLL KEYFRAME */
-@keyframes slideInfinite {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+/* ✅ COLOR LOGO ON HOVER */
+.brand-item:hover img {
+  filter: grayscale(0%);
 }
+
+.brand-item:hover {
+  background: #fff;
+  border-color: #ccc;
+}
+
+/* INFINITE ANIMATION */
+@keyframes slideInfinite {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 
 /* ============================

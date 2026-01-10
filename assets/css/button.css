@@ -1,0 +1,44 @@
+.btn-red {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+
+    &:hover{
+        background-color: var(--btn-red-hover-bg);
+        border-color: var(--btn-red-hover-bg)
+    }
+    &:active{
+        background-color: var(--btn-red-hover-bg);
+        border-color: var(--btn-red-hover-bg)
+    }
+}
+
+.red-anchor{
+    color:#267493;
+    &:hover{
+        color:var(--accent-color);
+    }
+}
+
+.btn-black{
+    background-color: var(--btn-red-hover-bg);
+    border-color: var(--btn-red-hover-bg);
+    &:hover {
+        background-color: var(--accent-color) !important;
+        border-color: var(--accent-color);
+    }
+    &:active {
+        background-color: var(--accent-color) !important;
+        border-color: var(--accent-color);
+    }
+}
+
+.plush-btn{
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    &:hover{
+        background-color: var(--btn-red-hover-bg);
+        border-color: var(--btn-red-hover-bg);
+        color:#fff;
+    }
+}
+

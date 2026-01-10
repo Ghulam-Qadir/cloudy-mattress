@@ -13,14 +13,14 @@
   .bs-wrap {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0px;
     box-sizing: border-box;
   }
 
   /* MAIN GRID: promo left + cards right */
   .bs-main {
     display: grid;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 358px 1fr;
     gap: 22px;
   }
 
@@ -65,7 +65,7 @@
 
   .promo-large {
     color: #fff;
-    font-size: 58px;
+    font-size: 52px;
     font-weight: 800;
     line-height: 0.98;
     text-transform: uppercase;
@@ -142,6 +142,7 @@
 
     .promo {
       height: 420px;
+      display: none;
     }
 
     .promo-box {

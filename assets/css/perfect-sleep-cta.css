@@ -64,35 +64,6 @@
   margin-top: 12px;
 }
 
-/* ---------------- BUTTON (EXACT UI) ---------------- */
-.sleep-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #D90000; /* UI red */
-  color: #fff;
-  padding: 18px 50px;
-  border-radius: 999px; /* full pill */
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
-  transition: all 0.2s ease;
-}
-
-.sleep-btn .arrow {
-  margin-left: 18px;
-  font-size: 26px;
-  font-weight: 300;
-  color: #fff;
-}
-
-.sleep-btn:hover {
-  background: transparent;
-  color:#fff;
-  border:1px solid #fff;
-}
 
 /* ---------------- RIGHT SIDE ---------------- */
 .sleep-right {

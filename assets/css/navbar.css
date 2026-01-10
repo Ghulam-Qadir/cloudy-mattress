@@ -88,8 +88,10 @@ header {
     background-color: #f1f1f1;
     color: #000;
 }
-.top-nav{
-    display:none;
+
+.mobile-bottom-nav{
+    background-color: #67abc6b0;
+		backdrop-filter: blur(4px);
 }
 @media (max-width: 991.98px) {
     .navbar-collapse {

@@ -18,7 +18,7 @@
   
   /* content */
   .blog-content {
-    padding: 22px 22px 24px;
+    padding: 22px 10px 24px;
   }
   
   /* category pill */
@@ -34,17 +34,17 @@
   
   /* title */
   .blog-title {
-    font-size: 22px;
-    line-height: 1.1;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 600;
-    margin: 0 0 28px;
+    margin: 0 0 20px;
     color: #000;
   }
   
   /* excerpt */
   .blog-excerpt {
-    font-size: 15px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 20px;
     color: #444;
     margin: 0 0 40px;
   }
