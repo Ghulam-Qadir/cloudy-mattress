@@ -88,3 +88,107 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const container = document.querySelector('.productmobileslider');
+  const wrapper   = container?.querySelector('.ps-card-wraper');
+  const slides    = container?.querySelectorAll('.product-item');
+
+  let swiperInstance = null;
+
+  if (!container || !wrapper || !slides.length) return;
+
+  function handleSwiper() {
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+      if (isMobile) {
+          // ADD classes
+          container.classList.add('swiper');
+          wrapper.classList.add('swiper-wrapper');
+          slides.forEach(slide => slide.classList.add('swiper-slide'));
+
+          // INIT swiper (only once)
+          if (!swiperInstance) {
+              swiperInstance = new Swiper(container, {
+                  slidesPerView: 1.1,
+                  spaceBetween: 12,
+                  loop: true,
+                  speed: 600,
+                  autoplay: {
+                      delay: 3000,              // ⏱️ change time if needed
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                  },
+              });
+          }
+
+      } else {
+          // DESTROY swiper
+          if (swiperInstance) {
+              swiperInstance.destroy(true, true);
+              swiperInstance = null;
+          }
+
+          // REMOVE classes
+          container.classList.remove('swiper');
+          wrapper.classList.remove('swiper-wrapper');
+          slides.forEach(slide => slide.classList.remove('swiper-slide'));
+      }
+  }
+
+  handleSwiper();
+  window.addEventListener('resize', handleSwiper);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const container = document.querySelector('.plushcardmain');
+  const wrapper   = container?.querySelector('.plushcardmainwraper');
+  const slides    = container?.querySelectorAll('.plush-card');
+
+  let swiperInstance = null;
+
+  if (!container || !wrapper || !slides.length) return;
+
+  function handleSwiper() {
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+      if (isMobile) {
+          // ADD classes
+          container.classList.add('swiper');
+          wrapper.classList.add('swiper-wrapper');
+          slides.forEach(slide => slide.classList.add('swiper-slide'));
+
+          // INIT swiper (only once)
+          if (!swiperInstance) {
+              swiperInstance = new Swiper(container, {
+                  slidesPerView: 1,
+                  spaceBetween: 12,
+                  loop: true,
+                  speed: 600,
+                  autoplay: {
+                      delay: 3000,              // ⏱️ change time if needed
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                  },
+              });
+          }
+
+      } else {
+          // DESTROY swiper
+          if (swiperInstance) {
+              swiperInstance.destroy(true, true);
+              swiperInstance = null;
+          }
+
+          // REMOVE classes
+          container.classList.remove('swiper');
+          wrapper.classList.remove('swiper-wrapper');
+          slides.forEach(slide => slide.classList.remove('swiper-slide'));
+      }
+  }
+
+  handleSwiper();
+  window.addEventListener('resize', handleSwiper);
+});

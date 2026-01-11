@@ -44,7 +44,7 @@
 
 
 /* --- cards grid (empty layout only) --- */
-.ps-cards {
+.ps-cards .ps-card-wraper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
@@ -81,4 +81,26 @@
     flex-direction: column;
     width: 100%;
   }
+}
+
+
+/* =========================
+   SWIPER MOBILE FIX
+   ========================= */
+
+.ps-cards.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ps-cards.swiper .ps-card-wraper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+}
+
+.ps-cards.swiper .plush-card {
+    width: 100% !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box;
 }
