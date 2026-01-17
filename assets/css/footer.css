@@ -292,7 +292,17 @@ background: #e8edf0;
 
 /* Responsive fixes */
 @media (max-width: 768px) {
-    .footer-title.text-center { text-align: left !important; }
-    .footer-menu a { padding-left: 22px; }
-    .footer-cta-btn { padding: 12px 28px; font-size: 18px; }
+  .footer-bar{
+    margin-bottom: 72px !important;
+  }
+    .footer-title.text-center { 
+      text-align: left !important;
+     }
+    .footer-menu a {
+       padding-left: 22px;
+       }
+    .footer-cta-btn { 
+      padding: 12px 28px;
+      font-size: 18px;
+     }
 }

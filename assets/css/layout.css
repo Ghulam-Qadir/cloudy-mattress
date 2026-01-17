@@ -148,12 +148,12 @@ a{
   .ps-hero {
     gap: 14px;
     margin-bottom: 22px;
+    overflow: hidden;
   }
 
   .ps-hero-left {
     gap: 14px;
     align-items: flex-start;
-    flex-wrap: wrap;
   }
 
   .ps-hero-badges .logo-slices {

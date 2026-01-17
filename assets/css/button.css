@@ -16,6 +16,7 @@
     color:#267493;
     &:hover{
         color:var(--accent-color);
+        text-decoration: none;
     }
 }
 

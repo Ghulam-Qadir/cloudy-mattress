@@ -111,7 +111,24 @@ header {
 }
 
 @media (max-width:767.98px){
+    .cart-icon .cart-notification{
+    top: 16px;
+    right: 11px;
+    }
+
+    .ps-pills{
+        flex-wrap: nowrap
+    }
     .top-nav{
         display:block;
+    }
+}
+
+@media (max-width:479.98px){
+    .tab-wraper{
+        overflow-x: auto;
+        white-space: nowrap;
+        padding:20px 0px;
+        max-width:80%;
     }
 }
