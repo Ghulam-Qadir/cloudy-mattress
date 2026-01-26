@@ -150,136 +150,146 @@
 			</div>
 		</nav>
 	</header>
-    <main>
+	<main>
 
 
 		<section class="filter-product-wraper">
-		<div class="container-fluid shop-page-layout my-5 position-relative justify-content-center">
-			<aside class="filter-sidebar" style="left:-200px;">
+			<div class="container-fluid shop-page-layout my-5 position-relative justify-content-center">
+				<aside class="filter-sidebar" style="left:-200px;">
 
-				<!-- PRICE RANGE -->
-				<div class="filter-group price-filter">
-					<h4 class="filter-heading">Set Price Range</h4>
-				
-					<div class="price-slider">
-						<input type="range" id="min-price" min="0" max="5000" value="0">
-						<input type="range" id="max-price" min="0" max="5000" value="5000">
-					</div>
-				
-					<div class="price-values">
-						<span id="min-price-value">$0</span>
-						<span id="max-price-value">$5000</span>
-					</div>
-				</div>
-				
-				
-			
-				<!-- TYPE -->
-				<div class="filter-group" data-filter="category">
-					<button class="filter-toggle">
-						Select Mattress Type
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="plush"> Plush</label>
-						<label><input type="checkbox" value="medium"> Medium</label>
-						<label><input type="checkbox" value="firm" checked> Firm</label>
-						<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
-						<label><input type="checkbox" value="memory-foam"> Memory foam</label>
-						<label><input type="checkbox" value="hybrid"> Hybrid</label>
-					</div>
-				</div>
-			
-				<!-- SIZE -->
-				<div class="filter-group" data-filter="size">
-					<button class="filter-toggle">
-						Select Mattress Size
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="twin" checked> Twin</label>
-						<label><input type="checkbox" value="twin-xl"> Twin XL</label>
-						<label><input type="checkbox" value="full" checked> Full</label>
-						<label><input type="checkbox" value="queen"> Queen</label>
-						<label><input type="checkbox" value="king"> King</label>
-						<label><input type="checkbox" value="cal-king"> Cal king</label>
-						<label><input type="checkbox" value="split-king"> Split king</label>
-					</div>
-				</div>
-			
-				<!-- BRAND -->
-				<div class="filter-group" data-filter="brand">
-					<button class="filter-toggle">
-						Select Mattress Brand
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="ashley" checked> Ashley</label>
-						<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
-						<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
-						<label><input type="checkbox" value="corsicana"> Corsicana</label>
-						<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
-						<label><input type="checkbox" value="american-star"> American star</label>
-						<label><input type="checkbox" value="diamond-mattresses" checked> Diamond mattresses</label>
-						<label><input type="checkbox" value="malouf"> Malouf</label>
-						<label><input type="checkbox" value="hiend"> Hiend</label>
-						<label><input type="checkbox" value="bed-gear"> Bed gear</label>
-						<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
-					</div>
-				</div>
-			
-			</aside>
-			
-			
-			<div class="product-section-shop container">
-				<div class="header">
-                    <nav class="breadcrumb-wrapper" aria-label="Breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="/">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="/brands">Brands</a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                Ashley Mattress
-                            </li>
-                        </ol>
-                    </nav>
+					<!-- PRICE RANGE -->
+					<div class="filter-group price-filter">
+						<h4 class="filter-heading">Set Price Range</h4>
 
-                    <section class="ashley-hero">
-                        <div class="ashley-overlay">
-                            <div class="ashley-content">
-                                <h1>
-                                    ASHLEY<br>
-                                    MATTRESS
-                                </h1>
-                    
-                                <p class="lead">
-                                    When it comes to finding the perfect mattress,
-                                </p>
-                                <p>
-                                    Ashley mattresses stand out as a top choice for<br>
-                                    comfort, quality, and affordability.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    
-					
-				</div>
-				<div class="toolbar">
-					<h1>SHOP MATTRESS BY CATEGORIES</h1>
-					<div class="sort-options">
-						<label for="sort-by">Sort by</label>
-						<select id="sort-by">
-							<option value="most-recent">Most recent</option>
-							<option value="price-low-high">Price: Low to High</option>
-							<option value="price-high-low">Price: High to Low</option>
-						</select>
+						<div class="price-slider">
+							<input type="range" id="min-price" min="0" max="5000" value="0">
+							<input type="range" id="max-price" min="0" max="5000" value="5000">
+						</div>
+
+						<div class="price-values">
+							<span id="min-price-value">$0</span>
+							<span id="max-price-value">$5000</span>
+						</div>
 					</div>
-					<!-- <div class="view-controls">
+
+
+
+					<!-- TYPE -->
+					<div class="filter-group" data-filter="category">
+						<button class="filter-toggle">
+							Select Mattress Type
+							<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="rotated">
+									<polyline points="6 9 12 15 18 9"></polyline>
+								</svg></span>
+						</button>
+						<div class="filter-options">
+							<label><input type="checkbox" value="plush"> Plush</label>
+							<label><input type="checkbox" value="medium"> Medium</label>
+							<label><input type="checkbox" value="firm" checked> Firm</label>
+							<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
+							<label><input type="checkbox" value="memory-foam"> Memory foam</label>
+							<label><input type="checkbox" value="hybrid"> Hybrid</label>
+						</div>
+					</div>
+
+					<!-- SIZE -->
+					<div class="filter-group" data-filter="size">
+						<button class="filter-toggle">
+							Select Mattress Size
+							<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="rotated">
+									<polyline points="6 9 12 15 18 9"></polyline>
+								</svg></span>
+						</button>
+						<div class="filter-options">
+							<label><input type="checkbox" value="twin" checked> Twin</label>
+							<label><input type="checkbox" value="twin-xl"> Twin XL</label>
+							<label><input type="checkbox" value="full" checked> Full</label>
+							<label><input type="checkbox" value="queen"> Queen</label>
+							<label><input type="checkbox" value="king"> King</label>
+							<label><input type="checkbox" value="cal-king"> Cal king</label>
+							<label><input type="checkbox" value="split-king"> Split king</label>
+						</div>
+					</div>
+
+					<!-- BRAND -->
+					<div class="filter-group" data-filter="brand">
+						<button class="filter-toggle">
+							Select Mattress Brand
+							<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="rotated">
+									<polyline points="6 9 12 15 18 9"></polyline>
+								</svg></span>
+						</button>
+						<div class="filter-options">
+							<label><input type="checkbox" value="ashley" checked> Ashley</label>
+							<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
+							<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
+							<label><input type="checkbox" value="corsicana"> Corsicana</label>
+							<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
+							<label><input type="checkbox" value="american-star"> American star</label>
+							<label><input type="checkbox" value="diamond-mattresses" checked> Diamond mattresses</label>
+							<label><input type="checkbox" value="malouf"> Malouf</label>
+							<label><input type="checkbox" value="hiend"> Hiend</label>
+							<label><input type="checkbox" value="bed-gear"> Bed gear</label>
+							<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
+						</div>
+					</div>
+
+				</aside>
+
+
+				<div class="product-section-shop container">
+					<div class="header">
+						<nav class="breadcrumb-wrapper" aria-label="Breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="/">Home</a>
+								</li>
+								<li class="breadcrumb-item">
+									<a href="/brands">Brands</a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">
+									Ashley Mattress
+								</li>
+							</ol>
+						</nav>
+
+						<section class="ashley-hero">
+							<div class="ashley-overlay">
+								<div class="ashley-content">
+									<h1>
+										<span>ASHLEY</span><br>
+										MATTRESS
+									</h1>
+
+									<p class="lead">
+										When it comes to finding the perfect mattress,
+										Ashley mattresses stand out as a top choice for
+										comfort, quality, and affordability.
+									</p>
+								</div>
+							</div>
+						</section>
+
+
+
+					</div>
+					<div class="toolbar">
+						<h1>SHOP MATTRESS BY CATEGORIES</h1>
+						<div class="sort-options">
+							<label for="sort-by">Sort by</label>
+							<select id="sort-by">
+								<option value="most-recent">Most recent</option>
+								<option value="price-low-high">Price: Low to High</option>
+								<option value="price-high-low">Price: High to Low</option>
+							</select>
+						</div>
+						<!-- <div class="view-controls">
 						<button id="card-view-btn" class="active">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
 						</button>
@@ -287,16 +297,13 @@
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
 						</button>
 					</div> -->
-				</div>
-				<div id="product-list" class="card-view">
-					<!-- card -->
-						<div class="product-item swiper-slide"  
-						data-price="2499"
-						data-category="firm,pillow-top"
-						data-size="twin,full"
-						data-brand="ashley,dream-cloud">
-						<a href="">	<img src="assets/img/products-box1.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+					</div>
+					<div id="product-list" class="card-view">
+						<!-- card -->
+						<div class="product-item swiper-slide" data-price="2499" data-category="firm,pillow-top"
+							data-size="twin,full" data-brand="ashley,dream-cloud">
+							<a href=""> <img src="assets/img/products-box1.jpg"
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -330,13 +337,10 @@
 							</div>
 						</div>
 						<!-- card 2 -->
-						<div class="product-item swiper-slide" 
-						data-price="1700"
-						data-category="firm"
-						data-size="full"
-						data-brand="ashley,dream-cloud">
-							<a href="">	<img src="assets/img/products-box1.jpg"
-								alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+						<div class="product-item swiper-slide" data-price="1700" data-category="firm" data-size="full"
+							data-brand="ashley,dream-cloud">
+							<a href=""> <img src="assets/img/products-box1.jpg"
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -370,14 +374,10 @@
 							</div>
 						</div>
 						<!-- card 3 -->
-						<div class="product-item swiper-slide" 
-						data-price="3000"
-						data-category="pillow-top"
-						data-size="twin"
-						data-brand="ashley"
-						>
+						<div class="product-item swiper-slide" data-price="3000" data-category="pillow-top"
+							data-size="twin" data-brand="ashley">
 							<a href=""><img src="assets/img/products-box1.jpg"
-								alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -411,14 +411,10 @@
 							</div>
 						</div>
 						<!-- card -->
-						<div class="product-item swiper-slide" 
-						data-price="3299"
-						data-category="hybrid,firm"
-						data-size="queen,cal-king"
-						data-brand="american-star,diamond-mattresses"
-						>
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+						<div class="product-item swiper-slide" data-price="3299" data-category="hybrid,firm"
+							data-size="queen,cal-king" data-brand="american-star,diamond-mattresses">
+							<a href=""> <img src="assets/img/productimage.jpg"
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -452,13 +448,10 @@
 							</div>
 						</div>
 						<!-- card 2 -->
-						<div class="product-item swiper-slide" 
-						data-price="5000"
-						data-category="pillow-top,hybrid"
-						data-size="split-king,cal-king"
-						data-brand="bed-gear,hiend">
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+						<div class="product-item swiper-slide" data-price="5000" data-category="pillow-top,hybrid"
+							data-size="split-king,cal-king" data-brand="bed-gear,hiend">
+							<a href=""> <img src="assets/img/productimage.jpg"
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -492,13 +485,10 @@
 							</div>
 						</div>
 						<!-- card 3 -->
-						<div class="product-item swiper-slide" 
-						data-price="800"
-						data-category="pillow-top,hybrid"
-						data-size="split-king,cal-king"
-						data-brand="bed-gear,hiend">
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+						<div class="product-item swiper-slide" data-price="800" data-category="pillow-top,hybrid"
+							data-size="split-king,cal-king" data-brand="bed-gear,hiend">
+							<a href=""> <img src="assets/img/productimage.jpg"
+									alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
 							<div class="product-details">
 								<a href="#">
 									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
@@ -531,232 +521,299 @@
 								</div>
 							</div>
 						</div>
-				</div>
-				<div class="features-wrap container">
-					<div class="features">
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/shipping-car.svg" alt="">
+					</div>
+					<div class="features-wrap container my-5">
+						<div class="features">
+							<div class="feature">
+								<div class="icon">
+									<img src="assets/img/shipping-car.svg" alt="">
+								</div>
+								<span class="label-small">FREE</span>
+								<span class="label-big">SHIPPING</span>
 							</div>
-							<span class="label-small">FREE</span>
-							<span class="label-big">SHIPPING</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/return.svg" alt="">
+							<div class="feature">
+								<div class="icon">
+									<img src="assets/img/return.svg" alt="">
+								</div>
+								<span class="label-small">EASY</span>
+								<span class="label-big">RETURN</span>
 							</div>
-							<span class="label-small">EASY</span>
-							<span class="label-big">RETURN</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/financing.svg" alt="">
+							<div class="feature">
+								<div class="icon">
+									<img src="assets/img/financing.svg" alt="">
+								</div>
+								<span class="label-small">QUICK</span>
+								<span class="label-big">FINANCING</span>
 							</div>
-							<span class="label-small">QUICK</span>
-							<span class="label-big">FINANCING</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/secure-checkout.svg" alt="">
+							<div class="feature">
+								<div class="icon">
+									<img src="assets/img/secure-checkout.svg" alt="">
+								</div>
+								<span class="label-small">SECURE</span>
+								<span class="label-big">CHECKOUT</span>
 							</div>
-							<span class="label-small">SECURE</span>
-							<span class="label-big">CHECKOUT</span>
 						</div>
 					</div>
+					<section class="my-1">
+						<div class="container py-3" style="background-color: #f9fbfb;">
+							<div class="row">
+								<div class="col-md-6 overflow-auto custom-scroll" style="max-height: 800px; ">
+									<h4>The Best Ashley Mattresses for Every Sleeper</h4>
+									<p> When it comes to finding the perfect mattress, Ashley-mattresses stand out as a
+										top choice for comfort, quality, and affordability. At Cloudy Mattress, we offer an
+										extensive range of Ashley mattresses designed to provide you with the best sleep
+										experience.
+									</p>
+									<p>
+										Whether you are looking for an affordable Ashley mattress or the best Ashley
+										mattresses on the market, we have something for everyone.
+									</p>
+									<p>The Best Ashley Mattresses for Every Sleeper</p>
+									<p> Choosing the best Ashley mattresses can be overwhelming with so many options
+										available. Here's a look at some of the top picks:</p>
+									<h6>Ashley Hybrid Mattress:</h6>
+									<p>Combining the best of both worlds, the Ashley hybrid mattress offers the perfect
+										blend of foam and innerspring coils for superior support and comfort.</p>
+									<h6>Ashley Sleep Mattress:</h6>
+									<p>Designed for optimal rest, the Ashley sleep mattress is crafted to provide
+										excellent support and relieve pressure points.</p>
+	
+									<h6>Sierra Sleep Ashley Mattress:</h6>
+									<p>Known for its high-quality materials and innovative design, the Sierra Sleep
+										Ashley—mattress offers unparalleled comfort and durability.
+										Additionally, you won't regret checking our collection of perfect pillows as we deal
+										in both and bedgear pillows.</p>
+	
+									<h4>Benefits of Buying Ashley Mattresses</h4>
+									<h6>Comfort and Support:</h6>
+									<p>Ashley mattresses are designed to provide the perfect balance of comfort and
+										support, ensuring a good night's sleep.</p>
+									<h6>Affordability:</h6>
+									<p>At Cloudy Mattress, we offer Ashley mattress sales that make these high-quality
+										mattresses accessible to everyone.</p>
+									<h6>Variety:</h6>
+									<p>Whether you prefer a firm mattress, plush Mattress, or Ashley
+										mattresses come in a variety of options to suit your needs.</p>
+	
+	
+	
+										<h4>Why Choose Cloudy Mattress for Your Ashley
+											Mattress Purchase?</h4>
+										<h6>Buy Ashley Mattress Online:</h6>
+									<p>	Shopping for mattresses has always been challenging. Cloudy Mattress allows
+										you to buy Ashley mattresses online from the comfort of your home.</p>
+									<h6>	Affordable Ashley Mattress:</h6>
+										<p>We understand the importance of affordability. That's why we offer Ashley
+											mattresses at competitive prices, ensuring you get the best value for your money.</p>
+										<h6>Ashley Mattress Sale:</h6>
+									<p>	Check out our Ashley mattress sale to find amazing deals and discounts on your
+										favorite mattresses.</p>
+										<h6>Expert Customer Service:</h6>
+									<p>	Our team is here to help you find the perfect Ashley mattress for your needs. With
+										years of experience, we provide expert advice and assistance.</p>
+	
+	
+										<h4>Finding the Right Ashley Mattress Price</h4>
+										<p>At Cloudy-Mattress, we believe in offering transparent and competitive pricing.
+											Our Ashley mattress prices are designed to fit various budgets without
+											compromising on quality. Whether you are looking for an entry-level mattress or a
+											premium model, you will find the right Ashley mattress price at Cloudy Mattress.</p>
+										<h5>Our Mattress Types</h5>
+										Plush, Pillow Top, Firm, Memory Foam, Hybrid, Topper
+											<h5>			Our Mattress Brands</h5>
+									<p>	Blue Sleep, Natura, Bundle of Dreams. Corsicana, Simmons, Diamond, Cloudy
+										Mattress, American star</p>
+										<h4>Advantages of Ashley Hybrid Mattress</h4>
+	<p>The Ashley hybrid mattress is one of the most our
+		customers. Here's why:</p>
+	<h4>Enhanced Comfort:</h4>
+		<p>	The combination of foam and innerspring coils provides excellent comfort and
+			support.</p>
+		<h4>Durability:</h4>
+	<p>Built to last. the Ashley-hy&Lid-matues offers long-lasting durability.</p>
+	<h4>Versatility:</h4>
+	<p>Suitable for all Of sleepers. the Ashley hybrid mattress adapts to your
+		sleeping style for a restful night's sleep.</p>
+	
+	
+	
+	
+								</div>
+								<div class="col-md-6">
+	
+								<div class="container">
+									<div class="row g-3">
+										<div class="col-md-6">
+											<img src="assets/img/1.png" alt="" class="w-100">
+										</div>
+										<div class="col-md-6">
+											<img src="assets/img/2.png" alt="" class="w-100">
+										</div>
+										<div class="col-md-6">
+											<img src="assets/img/3.png" alt="" class="w-100">
+										</div>
+										<div class="col-md-6">
+											<img src="assets/img/4.png" alt="" class="w-100">
+										</div>
+										<div class="col-md-6">
+											<img src="assets/img/5.png" alt="" class="w-100">
+										</div>
+										<div class="col-md-6">
+											<img src="assets/img/6.png" alt="" class="w-100">
+										</div>
+									</div>
+								</div>
+	
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sleep-section">
+						<div class="sleep-wrap">
+							<div class="sleep-container my-1">
+								<!-- LEFT CONTENT -->
+								<div class="sleep-left">
+
+									<div class="sleep-heading">
+
+										<h2 class="sleep-bold">
+											<span class="top-title">Let’s Find The</span>
+											<span class="main-statment">Perfect Sleep</span>
+											<span class="bottom-title">Solution for you</span>
+										</h2>
+
+									</div>
+
+									<p class="sleep-desc">
+										Finding the perfect mattress is the key to waking up pain-free and fully rested.
+										Whether you struggle with back pain, joint discomfort, or just can’t find the
+										right
+										balance between support and comfort, we’ve got you covered!
+									</p>
+									<div class="actions text-center" bis_skin_checked="1">
+										<a href="#" class="btn btn-primary btn-red py-4 rounded-pill px-5">
+											Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
+										</a>
+									</div>
+									<p class="sleep-small">
+										Take our quick 2-minute quiz to discover the mattress that’s designed for your
+										unique sleep needs.
+									</p>
+								</div>
+								<!-- RIGHT SIDE - with overflow enabled -->
+								<div class="sleep-right">
+									<img src="assets/img/sleeping-girl.png" alt="sleeping person" class="sleep-img">
+								</div>
+							</div>
+						</div>
+					</section>
+
 				</div>
-                <section class="sleep-section">
-                    <div class="sleep-wrap">
-                        <div class="sleep-container">
-                            <!-- LEFT CONTENT -->
-                            <div class="sleep-left">
-        
-                                <div class="sleep-heading">
-        
-                                    <h2 class="sleep-bold">
-                                        <span class="top-title">Let’s Find The</span>
-                                        <span class="main-statment">Perfect Sleep</span>
-                                        <span class="bottom-title">Solution for you</span>
-                                    </h2>
-        
-                                </div>
-        
-                                <p class="sleep-desc">
-                                    Finding the perfect mattress is the key to waking up pain-free and fully rested.
-                                    Whether you struggle with back pain, joint discomfort, or just can’t find the right
-                                    balance between support and comfort, we’ve got you covered!
-                                </p>
-                                <div class="actions text-center" bis_skin_checked="1">
-                                    <a href="#" class="btn btn-primary btn-red py-4 rounded-pill px-5">
-                                        Take the Mattress Quiz <i class="bi bi-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <p class="sleep-small">
-                                    Take our quick 2-minute quiz to discover the mattress that’s designed for your
-                                    unique sleep needs.
-                                </p>
-                            </div>
-                            <!-- RIGHT SIDE - with overflow enabled -->
-                            <div class="sleep-right">
-                                <img src="assets/img/sleeping-girl.png" alt="sleeping person" class="sleep-img">
-                            </div>
-                        </div>
-                    </div>
-                </section>
 			</div>
-		</div>
 		</section>
-		  
-		<!-- <section class="feature-section">
-		
-		</section> -->
+
+
 
 		<section class="knowledge-section my-5 py-5">
-		<div class="container">
-			<!-- header / hero title -->
-			<div class="ps-hero">
-				<div class="ps-hero-left">
-					<div class="ps-hero-badges">
-						<img src="assets/img/improve-sleep (1).png" alt="">
-					</div>
-					<div>
-						<div class="eyebrow">DISCOVER WHY BUYING WITH</div>
-						<h2 class="hero-title">CLOUDY MATTRESS IS THE SMARTER CHOICE</h2>
-						<p class="hero-sub">From better sleep support to trusted quality, Cloudy Mattress gives you more value for your money. Making every night’s rest a smarter investment.</p>
+			<div class="container">
+				<!-- header / hero title -->
+				<div class="ps-hero">
+					<div class="ps-hero-left">
+						<div class="ps-hero-badges">
+							<img src="assets/img/improve-sleep (1).png" alt="">
+						</div>
+						<div>
+							<div class="eyebrow">DISCOVER WHY BUYING WITH</div>
+							<h2 class="hero-title">CLOUDY MATTRESS IS THE SMARTER CHOICE</h2>
+							<p class="hero-sub">From better sleep support to trusted quality, Cloudy Mattress gives you
+								more value for your money. Making every night’s rest a smarter investment.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="features-section">
-				<div class="features-grid">
-			
-					<!-- CARD 1 -->
-					<div class="feature-card">
-						<div class="feature-image">
-							<img src="assets/img/shipping-truck.png" alt="Fastest Shipping">
-							<div class="feature-overlay">
-								<span class="feature-subtitle">FASTEST</span>
-								<h3>SHIPPING</h3>
+				<div class="features-section">
+					<div class="features-grid">
+
+						<!-- CARD 1 -->
+						<div class="feature-card">
+							<div class="feature-image">
+								<img src="assets/img/shipping-truck.png" alt="Fastest Shipping">
+								<div class="feature-overlay">
+									<span class="feature-subtitle">FASTEST</span>
+									<h3>SHIPPING</h3>
+								</div>
+							</div>
+							<div class="feature-content">
+								<p>
+									Get your new mattress delivered quicker than ever with our priority
+									nationwide shipping. No long waits. Comfort arrives right at your
+									doorstep, fast.
+								</p>
 							</div>
 						</div>
-						<div class="feature-content">
-							<p>
-								Get your new mattress delivered quicker than ever with our priority
-								nationwide shipping. No long waits. Comfort arrives right at your
-								doorstep, fast.
-							</p>
-						</div>
-					</div>
-			
-					<!-- CARD 2 -->
-					<div class="feature-card">
-						<div class="feature-image">
-							<img src="assets/img/support.png" alt="Customer Support">
-							<div class="feature-overlay">
-								<span class="feature-subtitle">24 / 7</span>
-								<h3>CUSTOMER<br>SUPPORT</h3>
+
+						<!-- CARD 2 -->
+						<div class="feature-card">
+							<div class="feature-image">
+								<img src="assets/img/support.png" alt="Customer Support">
+								<div class="feature-overlay">
+									<span class="feature-subtitle">24 / 7</span>
+									<h3>CUSTOMER<br>SUPPORT</h3>
+								</div>
+							</div>
+							<div class="feature-content">
+								<p>
+									Whether it’s day or night, our dedicated team is always available to
+									answer questions, resolve issues, and guide you through every step
+									of your sleep journey.
+								</p>
 							</div>
 						</div>
-						<div class="feature-content">
-							<p>
-								Whether it’s day or night, our dedicated team is always available to
-								answer questions, resolve issues, and guide you through every step
-								of your sleep journey.
-							</p>
-						</div>
-					</div>
-			
-					<!-- CARD 3 -->
-					<div class="feature-card">
-						<div class="feature-image">
-							<img src="assets/img/guidance.png" alt="Expert Guidance">
-							<div class="feature-overlay">
-								<span class="feature-subtitle">EXPERT</span>
-								<h3>GUIDANCE</h3>
+
+						<!-- CARD 3 -->
+						<div class="feature-card">
+							<div class="feature-image">
+								<img src="assets/img/guidance.png" alt="Expert Guidance">
+								<div class="feature-overlay">
+									<span class="feature-subtitle">EXPERT</span>
+									<h3>GUIDANCE</h3>
+								</div>
+							</div>
+							<div class="feature-content">
+								<p>
+									Not sure which mattress suits you best? Our sleep experts are here
+									to help you choose the perfect option tailored to your comfort,
+									health, and lifestyle needs.
+								</p>
 							</div>
 						</div>
-						<div class="feature-content">
-							<p>
-								Not sure which mattress suits you best? Our sleep experts are here
-								to help you choose the perfect option tailored to your comfort,
-								health, and lifestyle needs.
-							</p>
-						</div>
-					</div>
-			
-					<!-- CARD 4 -->
-					<div class="feature-card">
-						<div class="feature-image">
-							<img src="assets/img/price.png" alt="Best Price Guaranteed">
-							<div class="feature-overlay">
-								<span class="feature-subtitle">BEST PRICE</span>
-								<h3>GUARANTEED</h3>
+
+						<!-- CARD 4 -->
+						<div class="feature-card">
+							<div class="feature-image">
+								<img src="assets/img/price.png" alt="Best Price Guaranteed">
+								<div class="feature-overlay">
+									<span class="feature-subtitle">BEST PRICE</span>
+									<h3>GUARANTEED</h3>
+								</div>
+							</div>
+							<div class="feature-content">
+								<p>
+									Shop with confidence knowing you’re getting the best value. If you
+									find a better deal, we’ll match it, guaranteed.
+								</p>
 							</div>
 						</div>
-						<div class="feature-content">
-							<p>
-								Shop with confidence knowing you’re getting the best value. If you
-								find a better deal, we’ll match it, guaranteed.
-							</p>
-						</div>
+
 					</div>
-			
 				</div>
+
 			</div>
-			
-		</div>
 
 		</section>
 
-		<section class="tech-section">
-
-		<div class="container">
-			<!-- ROW 1 -->
-			<div class="tech-row tech-bg">
-				<div class="tech-text">
-					<span class="tech-label">LUXURY EURO TOP</span>
-					<h2>DREAMCLOUD TECHNOLOGY.</h2>
-					<p class="tech-subtitle">Designed for superior comfort</p>
+	
 		
-					<p>
-						Our CloudQuilt™ euro top combines quilted memory foam with
-						advanced cooling fibers to create a breathable, pressure-relieving
-						surface that adapts to your body. With luxurious support and
-						enhanced airflow, it ensures every night sleeps like a dream.
-					</p>
-				</div>
-		
-				<div class="tech-image">
-					<img src="assets/img/dreamcloud-top.png" alt="DreamCloud Technology">
-				</div>
-			</div>
-		
-			<!-- ROW 2 -->
-			<div class="tech-row reverse">
-				<div class="tech-image">
-					<img src="assets/img/soothing-relief.png" alt="Soothing Relief">
-				</div>
-		
-				<div class="tech-text">
-					<span class="tech-label">SOOTHING RELIEF</span>
-					<h2>NIGHT AFTER NIGHT</h2>
-					<p class="tech-subtitle">Our innovative tri-zone support layer</p>
-		
-					<p>
-						works alongside high-quality memory foam for pressure relief and
-						spinal alignment. This proprietary design gives you stabilizing
-						support where you need it — like in your back and hips — and
-						contouring comfort where you don’t. It’s a sleep experience that’s
-						truly personalized to you.
-					</p>
-				</div>
-			</div>
-		</div>
-		
-		</section>
-
-
-		
-
-        <!-- Footer Section -->
+		<!-- Footer Section -->
 		<footer class="footer-bg py-5">
 			<div class="container">
 				<div class="row g-4 align-items-start">
@@ -869,7 +926,7 @@
 	</main>
 
 
-    <!-- Bootstrap JS Bundle -->
+	<!-- Bootstrap JS Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

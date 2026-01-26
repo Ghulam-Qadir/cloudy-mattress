@@ -26,6 +26,7 @@
   position: relative;
   overflow: visible;
   padding: 67px 0px 67px 40px;
+  max-height: 700px;
 }
 
 /* ---------------- LEFT SIDE ---------------- */
