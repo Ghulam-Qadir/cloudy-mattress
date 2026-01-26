@@ -211,3 +211,111 @@ a{
 }
 
 
+/* brand page banner */
+
+/* HERO CONTAINER */
+.ashley-hero {
+    position: relative;
+    height: 420px;
+    background-image: url("/assets/img/ashley-banner.png"); /* your image */
+    background-size: cover;
+    background-position: right center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* LEFT FADE OVERLAY */
+.ashley-overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.45) 35%,
+        rgba(0, 0, 0, 0.25) 55%,
+        rgba(0, 0, 0, 0.05) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+/* CONTENT BLOCK */
+.ashley-content {
+    max-width: 520px;
+}
+
+/* TITLE */
+.ashley-content h1 {
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+}
+
+/* LEAD LINE */
+.ashley-content .lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    margin: 0 0 6px;
+}
+
+/* DESCRIPTION */
+.ashley-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* Breadcrumb Wrapper */
+.breadcrumb-wrapper {
+    padding: 10px 0;
+    background: #ffffff;
+}
+
+/* Breadcrumb List */
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+/* Items */
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+/* Separator */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    margin: 0 8px;
+    color: #999;
+}
+
+/* Links */
+.breadcrumb-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+/* Active Item (Red like image) */
+.breadcrumb-item.active {
+    color: #e53935; /* red highlight */
+    font-weight: 500;
+    pointer-events: none;
+}
+
