@@ -86,7 +86,7 @@ a.btn-white:hover{
 }
 
 .custom-scroll {
-  max-height: 300px;
+  max-height: 800px;
   overflow-y: auto;
   scrollbar-width: thin;                /* Firefox */
   scrollbar-color: #cfd8e3 transparent; /* Firefox */
@@ -111,4 +111,8 @@ a.btn-white:hover{
   background-color: #b6c2d1;
 }
 
-
+@media screen and (max-width:768px) {
+  .custom-scroll {
+    max-height: 100% !important;
+  }
+}

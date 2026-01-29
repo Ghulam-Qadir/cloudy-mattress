@@ -323,3 +323,74 @@ line-height: 1.2;
     pointer-events: none;
 }
 
+.close-filters{
+  display: none;
+}
+
+
+.filter-sidebar.active {
+	right: 0;
+}
+
+.close-filters {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background: none;
+	border: none;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.mobile-filter-btn {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+@media (min-width: 992px) {
+	.filter-sidebar {
+		position: static;
+		right: auto;
+		height: auto;
+		box-shadow: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.mobile-filter-btn {
+		display: inline-flex;
+	}
+}
+
+@media screen and (min-width:200px) and (max-width:991px) {
+  .filter-sidebar {
+    position: fixed !important;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 360px;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+    padding: 20px;
+  }
+  .close-filters{
+    display: block !important;
+}
+
+.ashley-overlay{
+  padding:15px;
+  background-color: #00000078;
+}
+.ashley-hero{
+  width: 92%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+

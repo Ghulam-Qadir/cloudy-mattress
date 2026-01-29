@@ -7,12 +7,16 @@
 
 .filter-sidebar {
     width: 100%;
-    max-width: 240px;
+    max-width: 300px;
     background: #ffffff;
     border-right: 1px solid #e6eef4;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    position: relative;
 }
 
+.closeFilters{
+    display: none;
+}
 .filter-block {
     border-bottom: 1px solid #e6eef4;
     padding: 20px 18px;

@@ -117,7 +117,32 @@ $(document).ready(function () {
     $('#min-price, #max-price').on('input', function () {
         syncPriceSliders();
     });
-    
 
+    
+  
+
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const openBtn = document.getElementById('openFilters');
+	const closeBtn = document.getElementById('closeFilters');
+	const sidebar = document.querySelector('.filter-sidebar');
+
+	openBtn.addEventListener('click', function () {
+		sidebar.classList.add('active');
+	});
+
+	closeBtn.addEventListener('click', function () {
+		sidebar.classList.remove('active');
+	});
+
+	document.addEventListener('click', function (e) {
+		if (!sidebar.contains(e.target) && !openBtn.contains(e.target)) {
+			sidebar.classList.remove('active');
+		}
+	});
 });
 
