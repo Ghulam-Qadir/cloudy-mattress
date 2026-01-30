@@ -154,387 +154,417 @@
 
 
 		<section class="filter-product-wraper">
-		<div class="container-fluid shop-page-layout my-5">
-			<aside class="filter-sidebar">
-
-				<!-- PRICE RANGE -->
-				<div class="filter-group price-filter">
-					<h4 class="filter-heading">Set Price Range</h4>
-				
-					<div class="price-slider">
-						<input type="range" id="min-price" min="0" max="5000" value="0">
-						<input type="range" id="max-price" min="0" max="5000" value="5000">
-					</div>
-				
-					<div class="price-values">
-						<span id="min-price-value">$0</span>
-						<span id="max-price-value">$5000</span>
-					</div>
+			<div class="container-fluid  my-5 position-relative justify-content-center">
+				<div class="row g-0">
+					<div class="col-md-2">
+						<aside class="filter-sidebar">
+						<button class="close-filters" id="closeFilters">✕</button>
+	
+						<!-- PRICE RANGE -->
+						<div class="filter-group price-filter">
+							<h4 class="filter-heading">Set Price Range</h4>
+	
+							<div class="price-slider">
+								<input type="range" id="min-price" min="0" max="5000" value="0">
+								<input type="range" id="max-price" min="0" max="5000" value="5000">
+							</div>
+	
+							<div class="price-values">
+								<span id="min-price-value">$0</span>
+								<span id="max-price-value">$5000</span>
+							</div>
+						</div>
+	
+	
+	
+						<!-- TYPE -->
+						<div class="filter-group" data-filter="category">
+							<button class="filter-toggle">
+								Select Mattress Type
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="plush"> Plush</label>
+								<label><input type="checkbox" value="medium"> Medium</label>
+								<label><input type="checkbox" value="firm" checked> Firm</label>
+								<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
+								<label><input type="checkbox" value="memory-foam"> Memory foam</label>
+								<label><input type="checkbox" value="hybrid"> Hybrid</label>
+							</div>
+						</div>
+	
+						<!-- SIZE -->
+						<div class="filter-group" data-filter="size">
+							<button class="filter-toggle">
+								Select Mattress Size
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="twin" checked> Twin</label>
+								<label><input type="checkbox" value="twin-xl"> Twin XL</label>
+								<label><input type="checkbox" value="full" checked> Full</label>
+								<label><input type="checkbox" value="queen"> Queen</label>
+								<label><input type="checkbox" value="king"> King</label>
+								<label><input type="checkbox" value="cal-king"> Cal king</label>
+								<label><input type="checkbox" value="split-king"> Split king</label>
+							</div>
+						</div>
+	
+						<!-- BRAND -->
+						<div class="filter-group" data-filter="brand">
+							<button class="filter-toggle">
+								Select Mattress Brand
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="ashley" checked> Ashley</label>
+								<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
+								<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
+								<label><input type="checkbox" value="corsicana"> Corsicana</label>
+								<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
+								<label><input type="checkbox" value="american-star"> American star</label>
+								<label><input type="checkbox" value="diamond-mattresses" checked> Diamond mattresses</label>
+								<label><input type="checkbox" value="malouf"> Malouf</label>
+								<label><input type="checkbox" value="hiend"> Hiend</label>
+								<label><input type="checkbox" value="bed-gear"> Bed gear</label>
+								<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
+							</div>
+						</div>
+	
+					</aside>
 				</div>
+				<div class="col-md-10">
+					<div class="product-section-shop container">
+						<div class="header">
+	
+	
+	
+							
+							<nav class="breadcrumb-wrapper" aria-label="Breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="/">Home</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="/brands">Brands</a>
+									</li>
+									<li class="breadcrumb-item active" aria-current="page">
+										Ashley Mattress
+									</li>
+								</ol>
+							</nav>
+	
 				
-				
+	
+	
+	
+						</div>
+						<div class="toolbar">
+							<h1>SHOP MATTRESS BY CATEGORIES</h1>
+							<div class="toolbar-options d-flex align-items-center g-3">
+								<div class="sort-options">
+									<label for="sort-by">Sort by</label>
+									<select id="sort-by">
+										<option value="most-recent">Most recent</option>
+										<option value="price-low-high">Price: Low to High</option>
+										<option value="price-high-low">Price: High to Low</option>
+									</select>
+						
+								</div>
+		
+								<div class="filter-mobile-btn">
+									<button class="mobile-filter-btn" id="openFilters" aria-label="Open filters">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<line x1="4" y1="6" x2="20" y2="6"></line>
+											<line x1="8" y1="12" x2="16" y2="12"></line>
+											<line x1="10" y1="18" x2="14" y2="18"></line>
+										</svg>
+									</button>
+								</div>
+							</div>
 			
-				<!-- TYPE -->
-				<div class="filter-group" data-filter="category">
-					<button class="filter-toggle">
-						Select Mattress Type
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="plush"> Plush</label>
-						<label><input type="checkbox" value="medium"> Medium</label>
-						<label><input type="checkbox" value="firm" checked> Firm</label>
-						<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
-						<label><input type="checkbox" value="memory-foam"> Memory foam</label>
-						<label><input type="checkbox" value="hybrid"> Hybrid</label>
-					</div>
-				</div>
-			
-				<!-- SIZE -->
-				<div class="filter-group" data-filter="size">
-					<button class="filter-toggle">
-						Select Mattress Size
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="twin" checked> Twin</label>
-						<label><input type="checkbox" value="twin-xl"> Twin XL</label>
-						<label><input type="checkbox" value="full" checked> Full</label>
-						<label><input type="checkbox" value="queen"> Queen</label>
-						<label><input type="checkbox" value="king"> King</label>
-						<label><input type="checkbox" value="cal-king"> Cal king</label>
-						<label><input type="checkbox" value="split-king"> Split king</label>
-					</div>
-				</div>
-			
-				<!-- BRAND -->
-				<div class="filter-group" data-filter="brand">
-					<button class="filter-toggle">
-						Select Mattress Brand
-						<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotated"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-					</button>
-					<div class="filter-options">
-						<label><input type="checkbox" value="ashley" checked> Ashley</label>
-						<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
-						<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
-						<label><input type="checkbox" value="corsicana"> Corsicana</label>
-						<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
-						<label><input type="checkbox" value="american-star"> American star</label>
-						<label><input type="checkbox" value="diamond-mattresses" checked> Diamond mattresses</label>
-						<label><input type="checkbox" value="malouf"> Malouf</label>
-						<label><input type="checkbox" value="hiend"> Hiend</label>
-						<label><input type="checkbox" value="bed-gear"> Bed gear</label>
-						<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
-					</div>
-				</div>
-			
-			</aside>
-			
-			
-			<div class="product-section-shop container">
-				<div class="header">
-					<div class="breadcrumbs">
-						<span>Home</span> / <span>Categories</span> / <span>Mattresses</span>
-					</div>
 					
-				</div>
-				<div class="toolbar">
-					<h1>SHOP MATTRESS BY CATEGORIES</h1>
-					<div class="sort-options">
-						<label for="sort-by">Sort by</label>
-						<select id="sort-by">
-							<option value="most-recent">Most recent</option>
-							<option value="price-low-high">Price: Low to High</option>
-							<option value="price-high-low">Price: High to Low</option>
-						</select>
-					</div>
-					<!-- <div class="view-controls">
-						<button id="card-view-btn" class="active">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-						</button>
-						<button id="list-view-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-						</button>
-					</div> -->
-				</div>
-				<div id="product-list" class="card-view">
-					<!-- card -->
-						<div class="product-item swiper-slide"  
-						data-price="2499"
-						data-category="firm,pillow-top"
-						data-size="twin,full"
-						data-brand="ashley,dream-cloud">
-						<a href="">	<img src="assets/img/products-box1.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
+						</div>
+						<div id="product-list" class="card-view">
+							<!-- card -->
+							<div class="product-item swiper-slide" data-price="2499" data-category="firm,pillow-top"
+								data-size="twin,full" data-brand="ashley,dream-cloud">
+								<a href=""> <img src="assets/img/products-box1.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
 								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
+							</div>
+							<!-- card 2 -->
+							<div class="product-item swiper-slide" data-price="1700" data-category="firm" data-size="full"
+								data-brand="ashley,dream-cloud">
+								<a href=""> <img src="assets/img/products-box1.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
 								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
+							</div>
+							<!-- card 3 -->
+							<div class="product-item swiper-slide" data-price="3000" data-category="pillow-top"
+								data-size="twin" data-brand="ashley">
+								<a href=""><img src="assets/img/products-box1.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
 								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
+							</div>
+							<!-- card -->
+							<div class="product-item swiper-slide" data-price="3299" data-category="hybrid,firm"
+								data-size="queen,cal-king" data-brand="american-star,diamond-mattresses">
+								<a href=""> <img src="assets/img/productimage.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
+								</div>
+							</div>
+							<!-- card 2 -->
+							<div class="product-item swiper-slide" data-price="5000" data-category="pillow-top,hybrid"
+								data-size="split-king,cal-king" data-brand="bed-gear,hiend">
+								<a href=""> <img src="assets/img/productimage.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
+								</div>
+							</div>
+							<!-- card 3 -->
+							<div class="product-item swiper-slide" data-price="800" data-category="pillow-top,hybrid"
+								data-size="split-king,cal-king" data-brand="bed-gear,hiend">
+								<a href=""> <img src="assets/img/productimage.jpg"
+										alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
+								<div class="product-details">
+									<a href="#">
+										<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
+									</a>
+									<div class="reviews">
+										<span class="stars">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+											<img class="star" src="assets/img/stars.png">
+										</span>
+										<span class="review-count"><a href="#">9 Reviews</a></span>
+									</div>
+									<div class="price">
+										<span class="original-price">$2,999.00</span>
+										<span class="current-price">$2,099.00</span>
+										<span class="price-info">(Starting Price)</span>
+									</div>
+									<div class="size-options">
+										<button class="active">Twin</button>
+										<button>Twin XL</button>
+										<button>Full</button>
+										<button>Queen</button>
+										<button>3 More</button>
+									</div>
+									<div class="brand-info">
+										<span>Brand: <strong>Cloudy Mattress</strong></span>
+										<button class="shop-now">SHOP NOW</button>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- card 2 -->
-						<div class="product-item swiper-slide" 
-						data-price="1700"
-						data-category="firm"
-						data-size="full"
-						data-brand="ashley,dream-cloud">
-							<a href="">	<img src="assets/img/products-box1.jpg"
-								alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
+						<div class="features-wrap container my-5">
+							<div class="features">
+								<div class="feature">
+									<div class="icon">
+										<img src="assets/img/shipping-car.svg" alt="">
+									</div>
+									<span class="label-small">FREE</span>
+									<span class="label-big">SHIPPING</span>
 								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
+								<div class="feature">
+									<div class="icon">
+										<img src="assets/img/return.svg" alt="">
+									</div>
+									<span class="label-small">EASY</span>
+									<span class="label-big">RETURN</span>
 								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
+								<div class="feature">
+									<div class="icon">
+										<img src="assets/img/financing.svg" alt="">
+									</div>
+									<span class="label-small">QUICK</span>
+									<span class="label-big">FINANCING</span>
 								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
+								<div class="feature">
+									<div class="icon">
+										<img src="assets/img/secure-checkout.svg" alt="">
+									</div>
+									<span class="label-small">SECURE</span>
+									<span class="label-big">CHECKOUT</span>
 								</div>
 							</div>
 						</div>
-						<!-- card 3 -->
-						<div class="product-item swiper-slide" 
-						data-price="3000"
-						data-category="pillow-top"
-						data-size="twin"
-						data-brand="ashley"
-						>
-							<a href=""><img src="assets/img/products-box1.jpg"
-								alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
-								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
-								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
-								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
-								</div>
-							</div>
-						</div>
-						<!-- card -->
-						<div class="product-item swiper-slide" 
-						data-price="3299"
-						data-category="hybrid,firm"
-						data-size="queen,cal-king"
-						data-brand="american-star,diamond-mattresses"
-						>
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
-								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
-								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
-								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
-								</div>
-							</div>
-						</div>
-						<!-- card 2 -->
-						<div class="product-item swiper-slide" 
-						data-price="5000"
-						data-category="pillow-top,hybrid"
-						data-size="split-king,cal-king"
-						data-brand="bed-gear,hiend">
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
-								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
-								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
-								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
-								</div>
-							</div>
-						</div>
-						<!-- card 3 -->
-						<div class="product-item swiper-slide" 
-						data-price="800"
-						data-category="pillow-top,hybrid"
-						data-size="split-king,cal-king"
-						data-brand="bed-gear,hiend">
-						<a href="">	<img src="assets/img/productimage.jpg"
-							alt="DreamCloud Hybrid Luxe 4.0 Queen Mattress"></a>
-							<div class="product-details">
-								<a href="#">
-									<h5> DreamCloud Hybrid Luxe 4.0 Queen Mattress </h5>
-								</a>
-								<div class="reviews">
-									<span class="stars">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-										<img class="star" src="assets/img/stars.png">
-									</span>
-									<span class="review-count"><a href="#">9 Reviews</a></span>
-								</div>
-								<div class="price">
-									<span class="original-price">$2,999.00</span>
-									<span class="current-price">$2,099.00</span>
-									<span class="price-info">(Starting Price)</span>
-								</div>
-								<div class="size-options">
-									<button class="active">Twin</button>
-									<button>Twin XL</button>
-									<button>Full</button>
-									<button>Queen</button>
-									<button>3 More</button>
-								</div>
-								<div class="brand-info">
-									<span>Brand: <strong>Cloudy Mattress</strong></span>
-									<button class="shop-now">SHOP NOW</button>
-								</div>
-							</div>
-						</div>
-				</div>
-				<div class="features-wrap container">
-					<div class="features">
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/shipping-car.svg" alt="">
-							</div>
-							<span class="label-small">FREE</span>
-							<span class="label-big">SHIPPING</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/return.svg" alt="">
-							</div>
-							<span class="label-small">EASY</span>
-							<span class="label-big">RETURN</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/financing.svg" alt="">
-							</div>
-							<span class="label-small">QUICK</span>
-							<span class="label-big">FINANCING</span>
-						</div>
-						<div class="feature">
-							<div class="icon">
-								<img src="assets/img/secure-checkout.svg" alt="">
-							</div>
-							<span class="label-small">SECURE</span>
-							<span class="label-big">CHECKOUT</span>
-						</div>
+	
+						
+	
 					</div>
 				</div>
+				</div>
+				
+
+
+				
 			</div>
-		</div>
 		</section>
 		  
 		<!-- <section class="feature-section">

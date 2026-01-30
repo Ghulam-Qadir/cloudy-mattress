@@ -341,7 +341,9 @@ line-height: 1.2;
 	font-size: 22px;
 	cursor: pointer;
 }
-
+.toolbar-options{
+  gap: 40px;
+}
 .mobile-filter-btn {
 	display: none;
 	background: none;
