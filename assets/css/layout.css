@@ -9,6 +9,10 @@
     max-width: 1200px;
 }
 
+.main-content-wrappers{
+  max-width: 1400px;
+}
+
 a{
   color:var(--accent-color);
 }

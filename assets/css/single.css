@@ -1,0 +1,419 @@
+.breadcrumb {
+  background: none;
+  font-size: 14px;
+}
+
+.thumbs img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #0D384B;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.thumbs img.active {
+  border: 2px solid #000;
+}
+
+.main-image {
+  background: #eef2f5;
+  padding: 0px;
+  text-align: center;
+  max-width: 584px;
+}
+.product-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-image img {
+  max-width: 100%;
+}
+
+
+
+.rating span {
+  color: #ff9800;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e53935;
+  margin: 0px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.save-badge {
+  background: #0a8f08;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.size-btn {
+  border-radius: 20px;
+  padding: 6px 16px;
+  border: none;
+  background: #e9ecef;
+  font-size: 14px;
+}
+
+.size-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000;
+  width: 140px;
+}
+
+.qty-box button {
+  width: 40px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.qty-box button:nth-child(1){
+  border-right:2px solid #000;
+}
+.qty-box button:nth-child(3){
+  border-left:2px solid #000;
+}
+.qty-box input {
+  width: 60px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+}
+.total-price{
+  color:#989898;
+  font-weight: 400;
+}
+.qty-box button:active {
+  transform: scale(0.95);
+}
+
+.size-guide {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.size-guide .info-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.size-guide:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.feature-box {
+  background: #EAEFF3;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.feature-box img{
+  width:34px;
+  margin-right: 10px;
+}
+.stock {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* remove default accordion styling */
+.custom-accordion .accordion-item {
+  border: none;
+}
+
+.custom-accordion .accordion-button {
+  background: none;
+  box-shadow: none;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* remove Bootstrap arrow */
+.custom-accordion .accordion-button::after {
+  display: none;
+}
+
+/* plus / minus */
+.custom-accordion .icon {
+  font-size: 30px;
+  font-weight: 300;
+  margin: unset;
+}
+
+/* body spacing */
+.custom-accordion .accordion-body {
+  padding: 20px 0 30px;
+  font-size: 18px;
+}
+
+.custom-accordion .accordion-body p {
+  margin-bottom: 24px;
+}
+
+/* add to cart */
+.add-to-cart {
+  background: #005f7f;
+  color: #fff;
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+}
+.add-to-cart:hover {
+  background: #004b65;
+}
+
+
+
+
+.sale-banner {
+  display: flex;
+  align-items: center;
+  background: #eef6e4;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.banner-left img {
+  max-width: 420px;
+}
+
+.banner-center {
+  flex: 1;
+}
+
+.banner-center h1 {
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+}
+
+.sale-title {
+  position: relative;
+  margin: 10px 0;
+}
+
+.sale-title .labor {
+  color: red;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.sale-title .sale {
+  position: absolute;
+  top: 28px;
+  left: 90px;
+  font-family: cursive;
+  font-size: 40px;
+}
+
+.code {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.code strong {
+  color: red;
+}
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer {
+  display: flex;
+  gap: 12px;
+}
+
+.time-box {
+  background: #fff;
+  padding: 16px 14px;
+  text-align: center;
+  min-width: 50px;
+  border-radius: 6px;
+}
+
+.time-box span {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.time-box small {
+  font-size: 14px;
+}
+
+
+.product-info{
+  background-color: #f9f8f8;
+}
+
+.product-info .feature-card {
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 28px 12px;
+  font-family: Arial, sans-serif;
+  row-gap: 20px;;
+}
+
+.feature-card h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: #015C80; /* blue heading */
+  font-weight: 500;
+  text-align: left;
+}
+
+.feature-card .divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #000;
+  margin-bottom: 18px;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  text-align: left;
+}
+
+.feature-card p strong {
+  font-weight: 600;
+}
+
+
+.compare-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #d9e3ea;
+  padding: 20px 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.compare-table thead th {
+  background: #fff;
+  font-size: 15px;
+}
+
+.compare-table thead h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.compare-table thead p {
+  margin: 0 0 8px;
+}
+
+.compare-table thead a {
+  color: red;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.compare-table .brand {
+  text-align: left;
+  min-width: 260px;
+}
+
+.brand-box strong {
+  display: block;
+  font-size: 18px;
+}
+
+.brand-box span {
+  font-size: 22px;
+  color: #0a6c86;
+  font-weight: 600;
+}
+
+.compare-table tbody td:first-child {
+  text-align: left;
+  font-size: 16px;
+}
+
+.compare-table tbody td {
+  font-size: 22px;
+  color: #0a5c78;
+  font-weight: 600;
+}
+
+.compare-table .row-blue td {
+  background: #e9f9ff;
+}
+
+.compare-table .highlight {
+  background: #e9f9ff;
+  font-size: 26px;
+}
+
+.compare-table .red {
+  color: red;
+  font-weight: 600;
+}
+

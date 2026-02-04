@@ -7,6 +7,7 @@
 
 .filter-sidebar {
     width: 100%;
+
     background: #ffffff;
     border-right: 1px solid #e6eef4;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -449,7 +450,7 @@
 }
 
 .features-section {
-    padding: 40px 20px;
+    padding: 40px 0px;
     background: #eef7fa;
 }
 
@@ -632,6 +633,7 @@
     }
     .filter-sidebar {
         max-width: 360px;
+        left:unset
     }
     .toolbar{
         flex-direction: column;

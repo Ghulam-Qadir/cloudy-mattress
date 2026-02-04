@@ -192,3 +192,6 @@ document.addEventListener('DOMContentLoaded', function () {
   handleSwiper();
   window.addEventListener('resize', handleSwiper);
 });
+
+
+
