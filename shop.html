@@ -153,99 +153,97 @@
     <main>
 
 
-		<section class="filter-product-wraper container-fluid">
+		<section class="filter-product-wraper container-fluid position-relative">
 			<div class="my-5 position-relative container">
 				<div class="row g-3 justify-content-center">
-					<div class="col-md-3">
-						<aside class="filter-sidebar">
-							<button class="close-filters" id="closeFilters">✕</button>
-							<!-- PRICE RANGE -->
-							<div class="filter-group price-filter">
-								<h4 class="filter-heading">Set Price Range</h4>
-	
-								<div class="price-slider">
-									<input type="range" id="min-price" min="0" max="5000" value="0">
-									<input type="range" id="max-price" min="0" max="5000" value="5000">
-								</div>
-	
-								<div class="price-values">
-									<span id="min-price-value">$0</span>
-									<span id="max-price-value">$5000</span>
-								</div>
+					<aside class="filter-sidebar position-absolute">
+						<button class="close-filters" id="closeFilters">✕</button>
+						<!-- PRICE RANGE -->
+						<div class="filter-group price-filter">
+							<h4 class="filter-heading">Set Price Range</h4>
+
+							<div class="price-slider">
+								<input type="range" id="min-price" min="0" max="5000" value="0">
+								<input type="range" id="max-price" min="0" max="5000" value="5000">
 							</div>
-	
-	
-	
-							<!-- TYPE -->
-							<div class="filter-group" data-filter="category">
-								<button class="filter-toggle">
-									Select Mattress Type
-									<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-											stroke-linecap="round" stroke-linejoin="round" class="rotated">
-											<polyline points="6 9 12 15 18 9"></polyline>
-										</svg></span>
-								</button>
-								<div class="filter-options">
-									<label><input type="checkbox" value="plush"> Plush</label>
-									<label><input type="checkbox" value="medium"> Medium</label>
-									<label><input type="checkbox" value="firm" checked> Firm</label>
-									<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
-									<label><input type="checkbox" value="memory-foam"> Memory foam</label>
-									<label><input type="checkbox" value="hybrid"> Hybrid</label>
-								</div>
+
+							<div class="price-values">
+								<span id="min-price-value">$0</span>
+								<span id="max-price-value">$5000</span>
 							</div>
-	
-							<!-- SIZE -->
-							<div class="filter-group" data-filter="size">
-								<button class="filter-toggle">
-									Select Mattress Size
-									<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-											stroke-linecap="round" stroke-linejoin="round" class="rotated">
-											<polyline points="6 9 12 15 18 9"></polyline>
-										</svg></span>
-								</button>
-								<div class="filter-options">
-									<label><input type="checkbox" value="twin" checked> Twin</label>
-									<label><input type="checkbox" value="twin-xl"> Twin XL</label>
-									<label><input type="checkbox" value="full" checked> Full</label>
-									<label><input type="checkbox" value="queen"> Queen</label>
-									<label><input type="checkbox" value="king"> King</label>
-									<label><input type="checkbox" value="cal-king"> Cal king</label>
-									<label><input type="checkbox" value="split-king"> Split king</label>
-								</div>
+						</div>
+
+
+
+						<!-- TYPE -->
+						<div class="filter-group" data-filter="category">
+							<button class="filter-toggle">
+								Select Mattress Type
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="plush"> Plush</label>
+								<label><input type="checkbox" value="medium"> Medium</label>
+								<label><input type="checkbox" value="firm" checked> Firm</label>
+								<label><input type="checkbox" value="pillow-top" checked> Pillow top</label>
+								<label><input type="checkbox" value="memory-foam"> Memory foam</label>
+								<label><input type="checkbox" value="hybrid"> Hybrid</label>
 							</div>
-	
-							<!-- BRAND -->
-							<div class="filter-group" data-filter="brand">
-								<button class="filter-toggle">
-									Select Mattress Brand
-									<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-											stroke-linecap="round" stroke-linejoin="round" class="rotated">
-											<polyline points="6 9 12 15 18 9"></polyline>
-										</svg></span>
-								</button>
-								<div class="filter-options">
-									<label><input type="checkbox" value="ashley" checked> Ashley</label>
-									<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
-									<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
-									<label><input type="checkbox" value="corsicana"> Corsicana</label>
-									<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
-									<label><input type="checkbox" value="american-star"> American star</label>
-									<label><input type="checkbox" value="diamond-mattresses" checked> Diamond
-										mattresses</label>
-									<label><input type="checkbox" value="malouf"> Malouf</label>
-									<label><input type="checkbox" value="hiend"> Hiend</label>
-									<label><input type="checkbox" value="bed-gear"> Bed gear</label>
-									<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
-								</div>
+						</div>
+
+						<!-- SIZE -->
+						<div class="filter-group" data-filter="size">
+							<button class="filter-toggle">
+								Select Mattress Size
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="twin" checked> Twin</label>
+								<label><input type="checkbox" value="twin-xl"> Twin XL</label>
+								<label><input type="checkbox" value="full" checked> Full</label>
+								<label><input type="checkbox" value="queen"> Queen</label>
+								<label><input type="checkbox" value="king"> King</label>
+								<label><input type="checkbox" value="cal-king"> Cal king</label>
+								<label><input type="checkbox" value="split-king"> Split king</label>
 							</div>
-	
-						</aside>
-					</div>
-					<div class="col-md-9  main-content-wraper">
+						</div>
+
+						<!-- BRAND -->
+						<div class="filter-group" data-filter="brand">
+							<button class="filter-toggle">
+								Select Mattress Brand
+								<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" class="rotated">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg></span>
+							</button>
+							<div class="filter-options">
+								<label><input type="checkbox" value="ashley" checked> Ashley</label>
+								<label><input type="checkbox" value="ideal-beds"> Ideal beds</label>
+								<label><input type="checkbox" value="dream-cloud" checked> Dream cloud</label>
+								<label><input type="checkbox" value="corsicana"> Corsicana</label>
+								<label><input type="checkbox" value="ghost-bed"> Ghost bed</label>
+								<label><input type="checkbox" value="american-star"> American star</label>
+								<label><input type="checkbox" value="diamond-mattresses" checked> Diamond
+									mattresses</label>
+								<label><input type="checkbox" value="malouf"> Malouf</label>
+								<label><input type="checkbox" value="hiend"> Hiend</label>
+								<label><input type="checkbox" value="bed-gear"> Bed gear</label>
+								<label><input type="checkbox" value="beauty-rest"> Beauty rest</label>
+							</div>
+						</div>
+
+					</aside>
+					<div class="col-md-12  main-content-wraper">
 						<div class="product-section-shop container">
 							<div class="header">
 
