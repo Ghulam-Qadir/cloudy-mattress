@@ -19,8 +19,6 @@
   @font-face {
     font-family: "Salitia";
     src: 
-       /* url("../fonts/Salitia.woff2") format("woff2"),
-       url("../fonts/Salitia.ttf") format("truetype"), */
        url("../fonts/Salitia-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
@@ -34,12 +32,21 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "SignPainterHouseScript";
+    src: url("../fonts/SignPainterHouseScript.woff2") format("woff2"),
+    url("../fonts/SignPainterHouseScript.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 
 
 
 :root {
     --primary-font: 'Rubik', sans-serif;
     --secondary-font: 'Viktor Script';
+    --SignPainterHouseScript: 'SignPainterHouseScript';
     --cta-font: 'Salitia';
     --text-color: #333;
     --primary-color: #007bff;
