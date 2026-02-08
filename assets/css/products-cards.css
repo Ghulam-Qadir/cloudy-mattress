@@ -184,6 +184,7 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   cursor: pointer;
+  min-width: 70px;
   &:hover{
     background-color:#000;
     color:#e9ecef;
