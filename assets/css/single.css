@@ -1013,6 +1013,198 @@
     background: #c40811;
 }
 
+.benefits-section {
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT COLUMN */
+.benefits-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.benefit-card {
+  border: 2px solid #cfe4f1;
+  border-radius: 6px;
+  padding: 18px 20px;
+  background: #fff;
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  color: #1b78a8;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* RIGHT COLUMN */
+.benefits-right {
+  padding-left: 40px;
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.benefits-title .key {
+  display: block;
+  font-size: 42px;
+  color: #d50000;
+  font-weight: 500;
+}
+
+.benefits-title .mattress {
+  display: block;
+  font-size: 44px;
+  font-weight: 800;
+  color: #000;
+}
+
+.benefits-title .benefits {
+  display: block;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 500;
+  color: #000;
+}
+
+/* IMAGE */
+.mattress-graphic img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================
+ RESPONSIVE
+===================== */
+
+/* TABLET */
+@media (max-width: 991px) {
+  .benefits-right {
+      padding-left: 0;
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  .benefits-title .key {
+      font-size: 36px;
+  }
+
+  .benefits-title .mattress,
+  .benefits-title .benefits {
+      font-size: 38px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .benefits-section {
+      padding: 40px 0;
+  }
+
+  .benefit-card h3 {
+      font-size: 18px;
+  }
+
+  .benefits-title .key {
+      font-size: 30px;
+  }
+
+  .benefits-title .mattress,
+  .benefits-title .benefits {
+      font-size: 32px;
+  }
+}
+
+
+.layers-section {
+  background: #fdf6ec;
+  padding: 60px 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADING */
+.layers-heading h1 {
+  font-size: 52px;
+  line-height: 1.05;
+}
+
+.layers-heading .red {
+  color: #e10600;
+  font-weight: 500;
+}
+
+.layers-heading em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ACCORDION */
+.layers-accordion .accordion-item {
+  border: none;
+  margin-bottom: 12px;
+}
+
+.layers-accordion .accordion-button {
+  background: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: none;
+  padding: 14px 18px;
+}
+
+.layers-accordion .accordion-button::after {
+  display: none;
+}
+
+/* PLUS / MINUS */
+.layers-accordion .accordion-button::before {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  font-size: 22px;
+}
+
+.layers-accordion .accordion-button:not(.collapsed)::before {
+  content: "−";
+}
+
+/* NUMBER */
+.layers-accordion .num {
+  color: #e10600;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* BODY */
+.layers-accordion .accordion-body {
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .layers-heading h1 {
+      font-size: 38px;
+  }
+}
+
+
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .cta-content {
@@ -1024,7 +1216,6 @@
         font-size: 32px;
     }
 }
-
 
 
 /* RESPONSIVE */
